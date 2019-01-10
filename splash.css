@@ -148,6 +148,8 @@ q {
 
     .about {
         text-align: center;
+        width: 90%;
+        padding: 10px;
     }
 
 
