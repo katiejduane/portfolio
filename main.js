@@ -15,7 +15,7 @@ const footerImg = document.querySelector('.b-r-corner')
 
 
 // click functions for changing content-------------------------------------->
-// $(document).ready(() => {}) // show do i revent those weird flickers when loading? 
+// $(document).ready(() => {}) // how do i revent those weird flickers when loading? 
 projectsButton.addEventListener('click', () => {
     mainContent.innerHTML = '';
     sideTitle.textContent = "Projects";
@@ -40,17 +40,6 @@ projectsButton.addEventListener('click', () => {
         techInfo.classList.add('tech-info');
         techInfo.textContent = projects[i].tech;
         projectContainer.appendChild(techInfo);
-        let links = document.createElement('div')
-        links.classList.add('link-box')
-        projectContainer.appendChild(links)
-        let link1 = document.createElement('a'); //issues appending both links!?
-        link1.href = projects[i].github;
-        link1.textContent = 'GitHub'
-        links.appendChild(link1);
-        let link2 = document.createElement('a'); //issues appending both links!?
-        link2.href = projects[i].liveSite;
-        link2.textContent = 'Live Site';
-        links.appendChild(link2);
         let projectDescription = document.createElement('div');
         projectDescription.classList.add('description')
         projectDescription.textContent = projects[i].description;
@@ -59,6 +48,79 @@ projectsButton.addEventListener('click', () => {
         contributions.classList.add('contributions');
         contributions.textContent = projects[i].contributions;
         projectContainer.appendChild(contributions);
+        let links = document.createElement('div')
+        links.classList.add('link-box')
+        projectContainer.appendChild(links)
+        let link1 = document.createElement('a');
+        link1.href = projects[i].github;
+        link1.textContent = 'GitHub';
+        links.appendChild(link1);
+        let link2 = document.createElement('a');
+        link2.href = projects[i].liveSite;
+        link2.textContent = 'Live Site';
+        links.appendChild(link2);
 
     }
+})
+
+aboutButton.addEventListener('click', () => {
+    mainContent.innerHTML = '';
+    sideTitle.textContent = "About";
+    sideDesc.textContent = `"Ramona always longed for glorious surprises. That was the way she was." --Beverly Cleary`;
+    for(let i = 0; i < aboutKD.length; i++) {
+        let bioPic = document.createElement('img');
+        bioPic.classList.add('bio-pic');
+        bioPic.src = aboutKD[i].img;
+        mainContent.appendChild(bioPic);
+        let bio1 = document.createElement('p');
+        bio1.classList.add('bio');
+        bio1.textContent = aboutKD[i].bio;
+        mainContent.appendChild(bio1);
+        let bio2 = document.createElement('p');
+        bio2.classList.add('bio');
+        bio2.textContent = aboutKD[i].bio2;
+        mainContent.appendChild(bio2);
+        let edu = document.createElement('p');
+        edu.classList.add('edu');
+        edu.textContent = aboutKD[i].edu;
+        mainContent.appendChild(edu);
+        let extra = document.createElement('p');
+        extra.classList.add('extra');
+        extra.textContent = aboutKD[i].extra;
+        mainContent.appendChild(extra);
+    }
+})
+
+skillsButton.addEventListener('click', () => {
+    mainContent.innerHTML = '';
+    sideTitle.textContent = "Skills";
+    sideDesc.textContent = "Boop";
+    let techTitle = document.createElement('p')
+    techTitle.classList.add('skills-title')
+    techTitle.textContent = "Technology"
+    mainContent.appendChild(techTitle)
+    let techSkills = document.createElement('div')
+    techSkills.classList.add('skills-icons');
+    for (let i = 0; i < skillz.length; i++) {
+        techSkills.innerHTML = skillz[i].tech
+        mainContent.appendChild(techSkills)
+    }
+    let softTitle = document.createElement('p')
+    softTitle.classList.add('skills-title')
+    softTitle.textContent = "Other Professional Skills"
+    mainContent.appendChild(softTitle)
+    let softSkills = document.createElement('div')
+    softSkills.classList.add('soft-skills');
+    for(let i = 0; i < skillz.length; i++){
+        softSkills.innerHTML = skillz[i].soft
+        mainContent.appendChild(softSkills)
+    }
+   
+
+})
+
+homeButton.addEventListener('click', () => {
+    mainContent.innerHTML = '';
+    sideTitle.textContent = "Hello";
+    sideDesc.textContent = "Beepboop";
 })

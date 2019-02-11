@@ -8,7 +8,7 @@ const projects = [
         github: `https://github.com/jasonpbenson/backEndProject`,
         liveSite: 'Live site OTW',
         description: `Description: I once attempted to knit a scarf according to how I felt everyday, using different colors of yarn. This quickly becamea tangled mess, but the idea stuck! This web application was designed to create space for the user to reflect on their moods using color and language, allowing them to have access to a visual log of their shifts in mood over time. It was also our intention to create an aesthetic experience for the user, no matter the feeling.`,
-        contributions: `Contributions: Original concept, implementation of chroma.js for color manipulation, object-oriented programming for color manipulation, implementation of datamuse API, router management, registration connection, database schema, database connection, data visualization using JSON.stringify along with JS and CSS.`,
+        contributions: `Contributions: Original concept, implementation of chroma.js for color manipulation, implementation of datamuse API, router management, registration connection, database schema, database connection, data visualization using JSON.stringify along with JS and CSS.`,
     },
 
     {
@@ -37,14 +37,55 @@ const projects = [
 ]
 
 const aboutKD = [
-    {
-
+    { 
+        img: `images/other/bio-pic-2.jpg`,
+        bio: `My name is Katie Duane and I'm a web developer, writer, and former teacher living in Atlanta, Georgia. 
+        Formally trained as an illustrator and art educator, I spent eight years teaching art and art history in Oregon, Ecuador, and Upstate New York.`,
+        bio2: `Will figure out what to write here soon...`,
+        edu: `I'm currently enrolled in the Full-Stack Immersive program at DigitalCrafts. We're learning about the world
+        of the web via Javascript, Python, Node.js, React, Redux, HTML, CSS and other development technologies. 
+        I also have my Masters in Education and a Bachelor of Fine Arts, both earned at the Rochester Institute of Technology.`,
+        extra: `When I'm not writing code, it's very likely that I'm writing or editing an essay or poem, painting, reading, or spending time outside.
+        I'm also a registered yoga teacher, and love to travel. I'm a fluent speaker of Spanish.`
     }
 ]
 
 const skillz = [
+    {
+        tech: 
+        `   <div><i class="devicon-html5-plain"></i></div>
+            <div><i class="devicon-css3-plain"></i></div>
+            <div><i class="devicon-sass-original"></i></div>
+            <div><i class="devicon-bootstrap-plain"></i></div>
+            <div><i class="devicon-javascript-plain"></i></div>
+            <div><i class="devicon-react-original"></i></div>
+            <div><i class="devicon-nodejs-plain"></i></div>
+            <div><i class="devicon-express-original"></i></div>
+            <div><i class="devicon-python-plain"></i></div>
+            <div><i class="devicon-git-plain"></i></div>
+            <div><i class="devicon-amazonwebservices-original"></i></div>
+            <div><i class="devicon-apache-plain"></i></div>
+            <div><i class="devicon-ubuntu-plain"></i></div>
+            <div><i class="devicon-mysql-plain"></i></div>
+            <div><i class="devicon-photoshop-plain"></i></div>
+            <div><i class="devicon-illustrator-plain"></i></div>
+        `
+    },
+
+    {
+        soft: `<p>Time management, organization, communication, debugging, 
+        creative problem-solving, project-planning, writing, proof-reading,
+        layout and design. Spanish-speaker.</p>`,
+    },
 
 ]
 
 
 
+
+
+
+
+// bio2: `My discovery of web development was very much a happy accident. About a year after my decision to leave the classroom, I took a free 
+//         JavaScript workshop on a whim. The syntax felt poetic to me, and because it is simply another means of making something out of nothing, 
+//         I quickly became enamored by it. I see writing code as similar to writing a good poem: it should be clear, efficient, beatiful, and accessible. I'm still a student, but this is always my goal!`,
