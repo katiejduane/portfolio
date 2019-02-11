@@ -7,7 +7,7 @@ const projects = [
         tech: `Technologies used: HTML, CSS, JavaScript, chroma.js, datamuse API, Node.js, express, MySQL, EJS`,
         github: `https://github.com/jasonpbenson/backEndProject`,
         liveSite: 'Live site OTW',
-        description: `Description: I once attempted to knit a scarf according to how I felt everyday, using different colors of yarn. This quickly becamea tangled mess, but the idea stuck! This web application was designed to create space for the user to reflect on their moods using color and language, allowing them to have access to a visual log of their shifts in mood over time. It was also our intention to create an aesthetic experience for the user, no matter the feeling.`,
+        description: `Description: I once attempted to knit a scarf according to how I felt everyday, using different colors of yarn. This quickly becamea tangled mess, but the idea stuck! emOceans is a web application that allows you to take note of your mood every day using color and language. Each day (and each mood, each memory) forms a tiny drop in the vast and ever-shifting ocean that makes up every one of us. We hoped to make the observation and appreciation of these shifts and waves more accessible, helpful, and more beautiful.`,
         contributions: `Contributions: Original concept, implementation of chroma.js for color manipulation, implementation of datamuse API, router management, registration connection, database schema, database connection, data visualization using JSON.stringify along with JS and CSS.`,
     },
 
@@ -18,7 +18,7 @@ const projects = [
         tech: `Technologies used: HTML, CSS, JavaScript, jQuery, Google Maps API, Adobe Photoshop for wireframing`,
         github: `https://github.com/katiejduane/Pithos--FrontEndProject`,
         liveSite: `https://www.katiejduane.com/pithos"`,
-        description: `Description: We wanted to create a space that would allow the user to experience an 'ordinary' thing in an unusual way.We were interested in ecosystems, and wanted to connect our ecosystem to the state of Georgia(home), and also the larger realms of history, mythology, and health; which are their own kinds of ecosystems, or containers.Pithos.`,
+        description: `Description: We wanted to create a space that would allow the user to experience an 'ordinary' thing in an unusual way. We were interested in ecosystems, and wanted to connect our ecosystem to the state of Georgia (home), and also the larger realms of history, mythology, and health; which are their own kinds of ecosystems, or containers. Pithos.`,
         contributions: `Contributions: Concept, plant and animal research, wireframes, CSS for mobile and tablet, JavaScript for 'plant' and 'animal' pages as well as map display and positioning.`,
 
     },
@@ -31,7 +31,7 @@ const projects = [
         github:`https://github.com/katiejduane/adultING`,
         liveSite: `Live site OTW`,
         description: `Description: Since I'm not much of a gamer, I wanted to create a game that instead resembled life; how the choices we make, no matter how 'right' or 'wrong' they seem, usually have both positive and negative consequences. Based on your choices throughout the game, you win and lose points in categories such as 'Health', 'Love', 'Growth', and 'Adventure'. You win, or life wins!`,
-        contributions: `Contributions: I created all the interfaces with Tiled, and wrote Python for game play using Pygame.`
+        contributions: `Contributions: I created all the interfaces with Tiled and Adobe Photoshop, and wrote Python for game play using Pygame.`
     }
 
 ]
@@ -50,7 +50,7 @@ const aboutKD = [
     }
 ]
 
-const skillz = [
+const skillz = 
     {
         tech: 
         `   <div><i class="devicon-html5-plain"></i></div>
@@ -69,16 +69,11 @@ const skillz = [
             <div><i class="devicon-mysql-plain"></i></div>
             <div><i class="devicon-photoshop-plain"></i></div>
             <div><i class="devicon-illustrator-plain"></i></div>
-        `
-    },
-
-    {
+        `,
         soft: `<p>Time management, organization, communication, debugging, 
         creative problem-solving, project-planning, writing, proof-reading,
         layout and design. Spanish-speaker.</p>`,
-    },
-
-]
+    }
 
 
 
@@ -88,4 +83,5 @@ const skillz = [
 
 // bio2: `My discovery of web development was very much a happy accident. About a year after my decision to leave the classroom, I took a free 
 //         JavaScript workshop on a whim. The syntax felt poetic to me, and because it is simply another means of making something out of nothing, 
-//         I quickly became enamored by it. I see writing code as similar to writing a good poem: it should be clear, efficient, beatiful, and accessible. I'm still a student, but this is always my goal!`,
+//         I quickly became enamored by it. I see writing code as similar to writing a good poem: it should be clear, efficient, beatiful, and accessible. 
+//         I'm still a student, but this is always my goal!`,
