@@ -75,13 +75,3 @@ const skillz =
         layout and design. Spanish-speaker.</p>`,
     }
 
-
-
-
-
-
-
-// bio2: `My discovery of web development was very much a happy accident. About a year after my decision to leave the classroom, I took a free 
-//         JavaScript workshop on a whim. The syntax felt poetic to me, and because it is simply another means of making something out of nothing, 
-//         I quickly became enamored by it. I see writing code as similar to writing a good poem: it should be clear, efficient, beatiful, and accessible. 
-//         I'm still a student, but this is always my goal!`,
