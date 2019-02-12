@@ -11,19 +11,23 @@ font-family: 'Quattrocento Sans', sans-serif;
 font-family: 'Amaranth', sans-serif;
 font-family: 'Rosario', sans-serif;
 font-family: 'Cherry Swash', cursive;
-font-family: 'Nova Oval', cursive;*/
+font-family: 'Nova Oval', cursive;
+*/
+
+/* USE MEDIA QUERIES TO UPDATE MARGIN BOTTOM so little image isn't cut off! */
 
 html {
     height: 100%;
-    overflow: auto;
+    background-color:rgb(184, 184, 184);
+    overflow: hidden;
 }
 
 body {
     margin: 0;
-    background: linear-gradient(to bottom,rgb(108, 193, 173), rgb(184, 184, 184));
+    background: linear-gradient(to bottom,rgb(108, 193, 173)5%, rgb(184, 184, 184));
     background-repeat: no-repeat;
     background-attachment: fixed;
-    overflow: scroll;
+    overflow: hidden;
 }
 
 /* MOBILE ===================================================================== */
@@ -36,7 +40,7 @@ body {
 nav {
     background-color: rgb(108, 193, 173);
     width: 100%;
-    height: 3.5rem;
+    height: 3.25rem;
     position: fixed;
     top: 0;   
 }
@@ -73,12 +77,12 @@ li:active{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 3.5rem
+    margin-top: 3.25rem
 }
 
 .main-wrapper p {
     font-family: 'Alegreya Sans', sans-serif;
-    font-size: 14pt;
+    font-size: 13pt;
 }
 
 .side-bar {
@@ -131,7 +135,7 @@ li:active{
     width: 13rem;
     height: 2rem;
     align-self: flex-end;
-    margin: 1rem 2rem 1rem 1rem;
+    margin: 1rem 2rem 2rem 1rem;
     text-align: right;
     font-family: 'Muli', sans-serif;;
 }
