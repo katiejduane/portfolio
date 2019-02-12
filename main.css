@@ -4,11 +4,25 @@ font-family: 'Crimson Text', serif;
 font-family: 'Muli', sans-serif;
 font-family: 'Arvo', serif;
 font-family: 'Rokkitt', serif;
-font-family: 'Enriqueta', serif; */
+font-family: 'Enriqueta', serif;
+font-family: 'Alegreya Sans', sans-serif;
+font-family: 'B612', sans-serif;
+font-family: 'Quattrocento Sans', sans-serif;
+font-family: 'Amaranth', sans-serif;
+font-family: 'Rosario', sans-serif;
+font-family: 'Cherry Swash', cursive;
+font-family: 'Nova Oval', cursive;*/
+
+html {
+    height: 100%;
+    overflow: auto;
+}
 
 body {
     margin: 0;
-    background-color: rgb(184, 184, 184);
+    background: linear-gradient(to bottom,rgb(108, 193, 173), rgb(184, 184, 184));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     overflow: scroll;
 }
 
@@ -20,7 +34,7 @@ body {
 
 /* DESKTOP ==================================================================== */
 nav {
-    background-color: rgb(184, 184, 184);
+    background-color: rgb(108, 193, 173);
     width: 100%;
     height: 3.5rem;
     position: fixed;
@@ -31,7 +45,7 @@ nav {
     list-style: none;
     position: absolute;
     right: 0;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Amaranth', sans-serif;
 }
 
 li {
@@ -41,12 +55,16 @@ li {
 }
 
 li:hover {
-    background-color: rgb(108, 193, 173);
+    background-color: rgb(236, 174, 147);
     cursor: pointer;
 }
 
 li:active{
-    background-color: rgb(108, 193, 173);
+    background-color: rgb(236, 174, 147);
+}
+
+.focus{
+    background-color: rgb(236, 174, 147);
 }
 
 .main-wrapper {
@@ -59,7 +77,8 @@ li:active{
 }
 
 .main-wrapper p {
-    font-family: 'Muli', sans-serif;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 14pt;
 }
 
 .side-bar {
@@ -72,10 +91,10 @@ li:active{
 }
 
 .side-bar span {
-    font-family: 'Enriqueta', serif;;
+    font-family: 'Amaranth', sans-serif;
     font-style: bold;
     padding: 0.5rem 1rem;
-    background-color:  rgb(108, 193, 173);
+    background-color:  rgb(236, 174, 147);
 }
 
 .side-bar p{
@@ -90,7 +109,7 @@ li:active{
     padding: 0.5rem;
     align-self: flex-end;
     overflow: scroll;
-    background-color: rgb(222, 222, 222);
+    background: linear-gradient(to bottom,rgb(222, 222, 222), rgb(184, 184, 184));
 }
 
 .content {
@@ -108,10 +127,6 @@ li:active{
     display: none;
 }
 
-/* .skills-icons {
-    display: none; 
-} */
-
 .b-r-corner {
     width: 13rem;
     height: 2rem;
@@ -128,8 +143,9 @@ li:active{
 }
 
 .title {
-    font-family: 'Enriqueta', serif;;
+    font-family: 'Amaranth', sans-serif;
     font-size: 18pt;
+    
 }
 
 .project-image {
@@ -137,12 +153,13 @@ li:active{
     margin: 0.5rem 0;
 }
 
-.tech-info, .link-box, .description, .contributions {
-    font-family: 'Muli', sans-serif;
+.project-info {
+    
     padding: 0.5rem;
 }
 
 .link-box {
+    font-family: 'Muli', sans-serif;
     margin: 0.5rem;
 }
 
@@ -155,7 +172,7 @@ li:active{
 }
 
 .link-box a:hover{
-    color: white;
+    text-decoration: underline;
 }
 
 /* about display CSS -------------------------------------------------------------- */
@@ -173,6 +190,20 @@ li:active{
     margin: 0.5rem;
 }
 
+.bio-links i {
+    font-size: 22pt;
+    padding: 1rem;
+}
+
+.bio-links a {
+    text-decoration: none;
+    color:  rgb(108, 193, 173);
+}
+
+.bio-links a:hover {
+    color: rgb(236, 174, 147)
+}
+
 /* skills page -------------------------------------------------------> */
 
 .skills-icons {
@@ -180,31 +211,33 @@ li:active{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    align-content: space-around;
     flex-wrap: wrap;
     width: 30rem;
-    /* background-color: rgb(43, 43, 43); */
-    color:  rgb(108, 193, 173);
-    font-size: 44pt;
-    padding: 2rem;
+    color: rgb(64, 177, 151);
+    font-size: 32pt;
+    padding: 1rem;
     margin: 2rem; 
     opacity: 0.7;
-    border: 2px dotted rgb(108, 193, 173);
+    border: 2px dashed rgb(236, 174, 147);
 }
 
-i {
-    padding: 1rem;
-    margin: 1rem 1rem 1rem 1rem;
-
+.skill-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
 }
 
+.skill-icon:hover{
+    color:  rgb(108, 193, 173);
+}
 
+.skill-icon p{
+    font-size: 11pt;
+}
 
+.soft-skills {
+    text-align: center;
+}
 
-/* footer {
-    margin: 0;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    background-color: white;
-} */

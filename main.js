@@ -12,11 +12,24 @@ let sideDesc = document.querySelector('.side-bar-desc')
 let viewWindow = document.querySelector('.viewer')
 let mainContent = document.querySelector('.content')
 const footerImg = document.querySelector('.b-r-corner')
+let buttons = Array.from(document.querySelectorAll('.menu-button'))
+
+
+function changeButtonColor(array) {
+    array.forEach(function(btn){
+        if(btn == event.target) {
+            btn.classList.add('focus')
+        }else{
+            btn.classList.remove('focus')
+        }
+    })
+}
 
 
 // click functions for changing content-------------------------------------->
 $(document).ready(() => { // how do i revent those weird flickers when loading? 
     projectsButton.addEventListener('click', () => {
+        changeButtonColor(buttons);
         mainContent.innerHTML = '';
         sideTitle.textContent = "Projects";
         sideDesc.textContent = "AAaarrggghhh!";
@@ -32,95 +45,74 @@ $(document).ready(() => { // how do i revent those weird flickers when loading?
             image1.classList.add('project-image');
             image1.src = projects[i].img;
             projectContainer.appendChild(image1);
-            let image2 = document.createElement('img');
-            image2.classList.add('project-image');
-            image2.src = projects[i].img2;
-            projectContainer.appendChild(image2);
-            let techInfo = document.createElement('div');
-            techInfo.classList.add('tech-info');
-            techInfo.textContent = projects[i].tech;
-            projectContainer.appendChild(techInfo);
-            let projectDescription = document.createElement('div');
-            projectDescription.classList.add('description')
-            projectDescription.textContent = projects[i].description;
-            projectContainer.appendChild(projectDescription);
-            let contributions = document.createElement('div');
-            contributions.classList.add('contributions');
-            contributions.textContent = projects[i].contributions;
-            projectContainer.appendChild(contributions);
             let links = document.createElement('div')
             links.classList.add('link-box')
             projectContainer.appendChild(links)
-            let link1 = document.createElement('a');
-            link1.href = projects[i].github;
-            link1.textContent = 'GitHub';
-            links.appendChild(link1);
-            let link2 = document.createElement('a');
-            link2.href = projects[i].liveSite;
-            link2.textContent = 'Live Site';
-            links.appendChild(link2);
-
+            links.insertAdjacentHTML('afterbegin', projects[i].github)
+            links.insertAdjacentHTML('beforeend', projects[i].liveSite)
+            let projectInfo = document.createElement('div');
+            projectInfo.classList.add('project-info');
+            projectInfo.insertAdjacentHTML('afterbegin', projects[i].tech);
+            projectInfo.insertAdjacentHTML('beforeend', projects[i].description)
+            projectInfo.insertAdjacentHTML('beforeend', projects[i].contributions)
+            projectContainer.appendChild(projectInfo);
         }
     })
 
 
     aboutButton.addEventListener('click', () => {
+        changeButtonColor(buttons);
         mainContent.innerHTML = '';
         sideTitle.textContent = "About";
         sideDesc.textContent = `"Ramona always longed for glorious surprises. That was the way she was." --Beverly Cleary`;
-        for(let i = 0; i < aboutKD.length; i++) {
-            let bioPic = document.createElement('img');
-            bioPic.classList.add('bio-pic');
-            bioPic.src = aboutKD[i].img;
-            mainContent.appendChild(bioPic);
-            let bio1 = document.createElement('p');
-            bio1.classList.add('bio');
-            bio1.textContent = aboutKD[i].bio;
-            mainContent.appendChild(bio1);
-            let bio2 = document.createElement('p');
-            bio2.classList.add('bio');
-            bio2.textContent = aboutKD[i].bio2;
-            mainContent.appendChild(bio2);
-            let edu = document.createElement('p');
-            edu.classList.add('edu');
-            edu.textContent = aboutKD[i].edu;
-            mainContent.appendChild(edu);
-            let extra = document.createElement('p');
-            extra.classList.add('extra');
-            extra.textContent = aboutKD[i].extra;
-            mainContent.appendChild(extra);
-        }
+        let bioPic = document.createElement('img');
+        bioPic.classList.add('bio-pic');
+        bioPic.src = aboutKD.img;
+        mainContent.appendChild(bioPic);
+        let bio = document.createElement('div');
+        bio.classList.add('bio');
+        bio.insertAdjacentHTML('afterbegin', aboutKD.bio)
+        bio.insertAdjacentHTML('beforeend', aboutKD.dev)
+        bio.insertAdjacentHTML('beforeend', aboutKD.edu)
+        bio.insertAdjacentHTML('beforeend', aboutKD.extra)
+        mainContent.appendChild(bio)
+        let bioLinks = document.createElement('div')
+        bioLinks.classList.add('bio-links')
+        bioLinks.insertAdjacentHTML('afterbegin',
+        `<a href="https://github.com/katiejduane"><i class="devicon-github-plain"></i></a>
+        <a href="https://www.linkedin.com/in/kathrynjduane/"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto: katiejduane@gmail.com"><i class="far fa-envelope"></i></a>`)
+        mainContent.appendChild(bioLinks)
+    
     })
 
     skillsButton.addEventListener('click', () => {
+        changeButtonColor(buttons);
         mainContent.innerHTML = '';
         sideTitle.textContent = "Skills";
         sideDesc.textContent = "Boop";
-        let techTitle = document.createElement('p')
-        techTitle.classList.add('skills-title')
+        let techTitle = document.createElement('div');
+        techTitle.classList.add('title');
         techTitle.textContent = "Technology"
         mainContent.appendChild(techTitle)
-        let techSkills = document.createElement('div')
-        console.log(techSkills, 1)
-        
+        let techSkills = document.createElement('div');
         techSkills.classList.add('skills-icons');
-        techSkills.innerHTML = skillz.tech
-        mainContent.appendChild(techSkills)
-
-
-        let softTitle = document.createElement('p')
-        softTitle.classList.add('skills-title')
+        techSkills.insertAdjacentHTML('afterbegin', skillz.tech);
+        mainContent.appendChild(techSkills);
+        let softTitle = document.createElement('div');
+        softTitle.classList.add('title');
         softTitle.textContent = "Other Professional Skills"
-        mainContent.appendChild(softTitle)
-        let softSkills = document.createElement('div')
+        mainContent.appendChild(softTitle);
+        let softSkills = document.createElement('div');
         softSkills.classList.add('soft-skills');
-        softSkills.innerHTML = skillz.soft
-        mainContent.appendChild(softSkills)
+        softSkills.insertAdjacentHTML('afterbegin', skillz.soft);
+        mainContent.appendChild(softSkills);
     
 
     })
 
     homeButton.addEventListener('click', () => {
+        changeButtonColor(buttons);
         mainContent.innerHTML = '';
         sideTitle.textContent = "Hello";
         sideDesc.textContent = "Beepboop";
