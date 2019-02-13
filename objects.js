@@ -4,7 +4,7 @@ const projects = [
         title: 'emOceans',
         img: `images/emoceans/newmooddesktop2.png`,
         tech: `<p><strong>Technologies used:</strong> HTML, CSS, JavaScript, chroma.js, datamuse API, Node.js, express, MySQL, EJS</p>`,
-        github: `<a href="https://github.com/jasonpbenson/backEndProject">GitHub</a>`,
+        github: `<a href="https://github.com/katiejduane/emOceans--backEndProject">GitHub</a>`,
         liveSite: `<span>Coming soon!</span>`,
         description: `<p><strong>Description:</strong> I once attempted to knit a scarf according to how I felt everyday, using different colors of yarn. This quickly became a tangled mess, but the idea stuck! emOceans is a web application that allows you to take note of your mood every day using color and language. Each day (and each mood, each memory) forms a tiny drop in the vast and ever-shifting ocean that makes up every one of us. We hoped to make the observation and appreciation of these shifts and waves more accessible, helpful, and more beautiful.</p>`,
         contributions: `<p><strong>Contributions:</strong> Original concept, implementation of chroma.js for color manipulation, implementation of datamuse API, router management, registration connection, database schema, database connection, data visualization using JSON.stringify along with JS and CSS.</p>`,
@@ -118,7 +118,7 @@ const skillz =
                 </div>
         `,
         soft: `<p>Time management, organization, communication, debugging, 
-        creative problem-solving, project-planning, writing, proof-reading,
-        layout and design. Spanish-speaker.</p>`,
+        creative problem-solving, project-planning, customer service, writing, proof-reading,
+        layout and visual design. Teaching and instructional design. Spanish.</p>`,
     }
 

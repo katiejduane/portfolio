@@ -12,6 +12,7 @@ font-family: 'Amaranth', sans-serif;
 font-family: 'Rosario', sans-serif;
 font-family: 'Cherry Swash', cursive;
 font-family: 'Nova Oval', cursive;
+rgb(236, 174, 147);
 */
 
 /* USE MEDIA QUERIES TO UPDATE MARGIN BOTTOM so little image isn't cut off! */
@@ -50,6 +51,7 @@ nav {
     position: absolute;
     right: 0;
     font-family: 'Amaranth', sans-serif;
+    color: rgb(23, 23, 23);
 }
 
 li {
@@ -59,16 +61,16 @@ li {
 }
 
 li:hover {
-    background-color: rgb(236, 174, 147);
+    background-color: rgb(159, 155, 238);
     cursor: pointer;
 }
 
 li:active{
-    background-color: rgb(236, 174, 147);
+    background-color: rgb(159, 155, 238);
 }
 
 .focus{
-    background-color: rgb(236, 174, 147);
+    background-color: rgb(159, 155, 238);
 }
 
 .main-wrapper {
@@ -83,6 +85,7 @@ li:active{
 .main-wrapper p {
     font-family: 'Alegreya Sans', sans-serif;
     font-size: 13pt;
+    color: rgb(23, 23, 23)
 }
 
 .side-bar {
@@ -91,19 +94,22 @@ li:active{
     height: auto;
     margin: 1rem 1rem 1rem 2rem;
     padding: 0.75rem;
-    align-self: center
+    align-self: center;
+    color: rgb(23, 23, 23)
 }
 
 .side-bar span {
     font-family: 'Amaranth', sans-serif;
     font-style: bold;
     padding: 0.5rem 1rem;
-    background-color:  rgb(236, 174, 147);
+    background-color:  rgb(159, 155, 238);
+    color: rgb(23, 23, 23)
 }
 
 .side-bar p{
     font-style: italic;
-    font-size: 10pt;
+    font-size: 11pt;
+    color: rgb(23, 23, 23)
 }
 
 .viewer {
@@ -149,6 +155,7 @@ li:active{
 .title {
     font-family: 'Amaranth', sans-serif;
     font-size: 18pt;
+    color: rgb(23, 23, 23);
     
 }
 
@@ -158,8 +165,8 @@ li:active{
 }
 
 .project-info {
-    
     padding: 0.5rem;
+    color: rgb(23, 23, 23);
 }
 
 .link-box {
@@ -170,13 +177,14 @@ li:active{
 .link-box a {
     background-color:  rgb(108, 193, 173);
     text-decoration: none;
-    color: black; 
+    color: rgb(23, 23, 23); 
     margin-right: 0.5rem;
     padding: 0.5rem 1rem;
 }
 
 .link-box a:hover{
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    color: rgb(107, 102, 198);
 }
 
 /* about display CSS -------------------------------------------------------------- */
@@ -205,7 +213,7 @@ li:active{
 }
 
 .bio-links a:hover {
-    color: rgb(236, 174, 147)
+    color: rgb(159, 155, 238)
 }
 
 /* skills page -------------------------------------------------------> */
@@ -222,7 +230,7 @@ li:active{
     padding: 1rem;
     margin: 2rem; 
     opacity: 0.7;
-    border: 2px dashed rgb(236, 174, 147);
+    border: 2px dashed rgb(159, 155, 238);
 }
 
 .skill-icon {

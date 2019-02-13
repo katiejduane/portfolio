@@ -27,36 +27,42 @@ function changeButtonColor(array) {
 
 
 // click functions for changing content-------------------------------------->
-$(document).ready(() => { // how do i revent those weird flickers when loading? 
+window.onload = function (e) {
+    console.log("done")
     projectsButton.addEventListener('click', () => {
         changeButtonColor(buttons);
         mainContent.innerHTML = '';
         sideTitle.textContent = "Projects";
         sideDesc.textContent = "AAaarrggghhh!";
-        for (let i = 0; i < projects.length; i++) {
+        let dummy = document.createElement('div');
+        projects.forEach((proj) => {
             let projectContainer = document.createElement('div');
             projectContainer.classList.add('project');
-            mainContent.appendChild(projectContainer);
             let projectTitle = document.createElement('div');
             projectTitle.classList.add('title');
-            projectTitle.textContent = projects[i].title;
-            projectContainer.appendChild(projectTitle);
+            projectTitle.textContent = proj.title;
             let image1 = document.createElement('img');
             image1.classList.add('project-image');
-            image1.src = projects[i].img;
-            projectContainer.appendChild(image1);
+            image1.src = proj.img;
             let links = document.createElement('div')
             links.classList.add('link-box')
-            projectContainer.appendChild(links)
-            links.insertAdjacentHTML('afterbegin', projects[i].github)
-            links.insertAdjacentHTML('beforeend', projects[i].liveSite)
+            links.insertAdjacentHTML('afterbegin', proj.github)
+            links.insertAdjacentHTML('beforeend', proj.liveSite)
             let projectInfo = document.createElement('div');
             projectInfo.classList.add('project-info');
-            projectInfo.insertAdjacentHTML('afterbegin', projects[i].tech);
-            projectInfo.insertAdjacentHTML('beforeend', projects[i].description)
-            projectInfo.insertAdjacentHTML('beforeend', projects[i].contributions)
+            projectInfo.insertAdjacentHTML('afterbegin', proj.tech);
+            projectInfo.insertAdjacentHTML('beforeend', proj.description)
+            projectInfo.insertAdjacentHTML('beforeend', proj.contributions)
+            projectContainer.appendChild(projectTitle);
+            projectContainer.appendChild(image1);
+            projectContainer.appendChild(links)
             projectContainer.appendChild(projectInfo);
-        }
+            dummy.appendChild(projectContainer)
+        })
+        setTimeout(() => {
+            mainContent.appendChild(dummy);
+        }, 100)
+
     })
 
 
@@ -79,11 +85,11 @@ $(document).ready(() => { // how do i revent those weird flickers when loading?
         let bioLinks = document.createElement('div')
         bioLinks.classList.add('bio-links')
         bioLinks.insertAdjacentHTML('afterbegin',
-        `<a href="https://github.com/katiejduane"><i class="devicon-github-plain"></i></a>
+            `<a href="https://github.com/katiejduane"><i class="devicon-github-plain"></i></a>
         <a href="https://www.linkedin.com/in/kathrynjduane/"><i class="fab fa-linkedin"></i></a>
         <a href="mailto: katiejduane@gmail.com"><i class="far fa-envelope"></i></a>`)
         mainContent.appendChild(bioLinks)
-    
+
     })
 
     skillsButton.addEventListener('click', () => {
@@ -107,7 +113,7 @@ $(document).ready(() => { // how do i revent those weird flickers when loading?
         softSkills.classList.add('soft-skills');
         softSkills.insertAdjacentHTML('afterbegin', skillz.soft);
         mainContent.appendChild(softSkills);
-    
+
 
     })
 
@@ -117,4 +123,4 @@ $(document).ready(() => { // how do i revent those weird flickers when loading?
         sideTitle.textContent = "Hello";
         sideDesc.textContent = "Beepboop";
     })
-})
+}
