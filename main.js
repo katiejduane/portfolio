@@ -5,15 +5,16 @@ const homeButton = document.querySelector('#home-button')
 const projectsButton = document.querySelector('#projects-button')
 const skillsButton = document.querySelector('#skills-button')
 const aboutButton = document.querySelector('#about-button')
-const resumeButton = document.querySelector('#resume-button')
+const contactButton = document.querySelector('#contact-button')
 let sideBar = document.querySelector('.side-bar')
 let sideTitle = document.querySelector('.side-bar-title')
 let sideDesc = document.querySelector('.side-bar-desc')
-let viewWindow = document.querySelector('.viewer')
+let viewer = document.querySelector('.viewer')
 let mainContent = document.querySelector('.content')
 const footerImg = document.querySelector('.b-r-corner')
+let violetMain = document.querySelector('.violet-main')
+let violetSmall = document.querySelector('.violet-small')
 let buttons = Array.from(document.querySelectorAll('.menu-button'))
-
 
 function changeButtonColor(array) {
     array.forEach(function(btn){
@@ -25,16 +26,23 @@ function changeButtonColor(array) {
     })
 }
 
+function leaveHome(){
+    // want to figure out how to make this conditional based on whether or not there IS a violet to even remove...
+    viewer.classList.remove("homepage-viewer")
+    mainContent.classList.remove("homepage-content")
+    footerImg.style.visibility = "visible"
+}
 
 // click functions for changing content-------------------------------------->
 window.onload = function (e) {
     console.log("done")
     projectsButton.addEventListener('click', () => {
+        leaveHome();
         changeButtonColor(buttons);
         mainContent.innerHTML = '';
         sideTitle.textContent = "Projects";
-        sideDesc.textContent = "AAaarrggghhh!";
-        let dummy = document.createElement('div');
+        sideDesc.textContent = `"The day you plant the seed is not the day you eat the fruit."`;
+        let space = document.createElement('div');
         projects.forEach((proj) => {
             let projectContainer = document.createElement('div');
             projectContainer.classList.add('project');
@@ -57,16 +65,17 @@ window.onload = function (e) {
             projectContainer.appendChild(image1);
             projectContainer.appendChild(links)
             projectContainer.appendChild(projectInfo);
-            dummy.appendChild(projectContainer)
+            space.appendChild(projectContainer)
         })
         setTimeout(() => {
-            mainContent.appendChild(dummy);
+            mainContent.appendChild(space);
         }, 100)
 
     })
 
 
     aboutButton.addEventListener('click', () => {
+        leaveHome();
         changeButtonColor(buttons);
         mainContent.innerHTML = '';
         sideTitle.textContent = "About";
@@ -78,25 +87,16 @@ window.onload = function (e) {
         let bio = document.createElement('div');
         bio.classList.add('bio');
         bio.insertAdjacentHTML('afterbegin', aboutKD.bio)
-        bio.insertAdjacentHTML('beforeend', aboutKD.dev)
-        bio.insertAdjacentHTML('beforeend', aboutKD.edu)
-        bio.insertAdjacentHTML('beforeend', aboutKD.extra)
         mainContent.appendChild(bio)
-        let bioLinks = document.createElement('div')
-        bioLinks.classList.add('bio-links')
-        bioLinks.insertAdjacentHTML('afterbegin',
-            `<a href="https://github.com/katiejduane"><i class="devicon-github-plain"></i></a>
-        <a href="https://www.linkedin.com/in/kathrynjduane/"><i class="fab fa-linkedin"></i></a>
-        <a href="mailto: katiejduane@gmail.com"><i class="far fa-envelope"></i></a>`)
-        mainContent.appendChild(bioLinks)
 
     })
 
     skillsButton.addEventListener('click', () => {
+        leaveHome();
         changeButtonColor(buttons);
         mainContent.innerHTML = '';
         sideTitle.textContent = "Skills";
-        sideDesc.textContent = "Boop";
+        sideDesc.textContent = `"Why not go out on a limb? That’s where the fruit is." --Mark Twain`;
         let techTitle = document.createElement('div');
         techTitle.classList.add('title');
         techTitle.textContent = "Technology"
@@ -117,10 +117,43 @@ window.onload = function (e) {
 
     })
 
+    contactButton.addEventListener('click', () => {
+        changeButtonColor(buttons);
+        leaveHome();
+        mainContent.innerHTML = '';
+        let contactBox = document.createElement('div');
+        contactBox.classList.add('contact-box');
+        mainContent.appendChild(contactBox)
+        let contactTitle = document.createElement('div');
+        contactTitle.classList.add('title');
+        contactTitle.textContent = "Contact Me"
+        contactBox.appendChild(contactTitle);
+        let contactText = document.createElement('div');
+        contactText.classList.add('contact-text');
+        contactText.textContent = contact.text;
+        contactBox.appendChild(contactText);
+        contactText.insertAdjacentHTML('beforeend', contact.aside)
+        let bioLinks = document.createElement('div')
+        bioLinks.classList.add('bio-links')
+        bioLinks.insertAdjacentHTML('afterbegin',
+        contact.links);
+        contactBox.appendChild(bioLinks);
+    })
+
     homeButton.addEventListener('click', () => {
         changeButtonColor(buttons);
         mainContent.innerHTML = '';
-        sideTitle.textContent = "Hello";
-        sideDesc.textContent = "Beepboop";
+        viewer.classList.add("homepage-viewer");
+        mainContent.classList.add("homepage-viewer");
+        footerImg.style.visibility = "hidden";
+        sideTitle.textContent = "Welcome";
+        sideDesc.textContent = `"Plant your own gardens and decorate your own soul, instead of waiting for someone to bring you flowers." --Jorge Luis Borges`;
+        let drawing = document.createElement('div');
+        drawing.classList.add("drawing");
+        mainContent.appendChild(drawing);
+        let violetMain = document.createElement('img');
+        violetMain.classList.add("violet-main");
+        violetMain.src = 'images/other/violet1.png';
+        drawing.appendChild(violetMain);
     })
 }

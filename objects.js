@@ -37,15 +37,15 @@ const aboutKD =
     { 
         img: `images/other/bio-pic-2.jpg`,
         bio: `<p>My name is Katie Duane and I'm a web developer, writer, and former teacher living in Atlanta, Georgia. 
-        Formally trained as an illustrator and art educator, I spent eight years teaching art and art history in Oregon, Ecuador, and Upstate New York.</p>`,
-        dev: `<p>Discovering web development was very much a happy accident. About a year after my decision to leave the classroom, I took a free 
+        Formally trained as an illustrator and art educator, I spent eight years teaching art and art history in Oregon, Ecuador, and Upstate New York.</p>
+        <p>Discovering web development was very much a happy accident. About a year after my decision to leave the classroom, I took a free 
         JavaScript workshop on a whim. The syntax felt poetic to me, and because it is simply another means of making something out of nothing, 
-        I quickly became enamored by it. I see writing code as similar to writing a good poem: it should be clear, efficient, beatiful, and accessible. 
-        While I'm still learning, this is always what I strive for.</p>`,
-        edu: `<p>I'm currently enrolled in the Full-Stack Immersive program at DigitalCrafts. We're learning about the world
-        of the web via Javascript, Python, Node.js, React, Redux, HTML, CSS and other development technologies.</p></p>`,
-        extra: `<p>When I'm not writing code, it's very likely that I'm writing, painting, reading (usually 18 books at once), or spending time outside.
-        I'm also a registered yoga teacher, love to travel, and am a fluent speaker of Spanish.</p>`
+        I quickly became enamored by it. I see writing code as similar to writing a good poem: it should be clear, efficient, beautiful, and accessible. 
+        While I'm still learning, this is always what I strive for.</p>
+        <p>I'm currently enrolled in the Full-Stack Immersive program at DigitalCrafts. We're learning about the world
+        of the web via Javascript, Python, Node.js, React, Redux, HTML, CSS and other development technologies.</p>
+        <p>When I'm not writing code, it's very likely that I'm writing, painting, reading (usually 18 books at once), or spending time outside.
+        I'm also a registered yoga teacher and love to travel. </p>`
     }
 
 
@@ -122,3 +122,25 @@ const skillz =
         layout and visual design. Teaching and instructional design. Spanish.</p>`,
     }
 
+    const contact = {
+        text: `If you'd like to contact me or learn more about my professional experiences, please click on any of the links below`,
+        aside: `<p>A quick aside: I chose to draw a violet for the homepage because they grow all over the world, in varying 
+        climates and locales. They are symbolic of spring, humility, candor, and intuition.</p>`,
+        links: 
+        `<div class="contact-icon">
+            <a href="https://github.com/katiejduane"><i class="devicon-github-plain"></i></a>
+            <p class="contact-icon-text">GitHub</p>
+        </div>
+        <div class="contact-icon">
+            <a href="https://www.linkedin.com/in/kathrynjduane/"><i class="fab fa-linkedin"></i></a>
+            <p class="contact-icon-text">LinkedIn</p>
+        </div>
+        <div class="contact-icon">
+            <a href="mailto: katiejduane@gmail.com"><i class="far fa-envelope"></i></a>
+            <p class="contact-icon-text">Email</p>
+        </div>
+        <div class="contact-icon">
+            <i class="far fa-file"></i>
+            <p class="contact-icon-text">Resume</p>
+        </div>`
+    }
