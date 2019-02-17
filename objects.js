@@ -2,7 +2,7 @@ const projects = [
 
     {
         title: 'emOceans',
-        img: `images/emoceans/newmooddesktop2.png`,
+        img: `images/emOceans/newmooddesktop2.png`,
         tech: `<p><strong>Technologies used:</strong> HTML, CSS, JavaScript, chroma.js, datamuse API, Node.js, express, MySQL, EJS</p>`,
         github: `<a href="https://github.com/katiejduane/emOceans--backEndProject">GitHub</a>`,
         liveSite: `<span>Live site OTW!</span>`,
