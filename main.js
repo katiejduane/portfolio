@@ -1,6 +1,7 @@
 // variable declarations----------------------------------------------------->
-const navbar = document.querySelector('.menu')
+const menu = document.querySelector('.menu')
 const menuButton = document.querySelectorAll('.menu-button')
+const mobileMenu = document.querySelector('.mobile-menu')
 const homeButton = document.querySelector('#home-button')
 const projectsButton = document.querySelector('#projects-button')
 const skillsButton = document.querySelector('#skills-button')
@@ -16,6 +17,7 @@ let violetMain = document.querySelector('.violet-main')
 let violetSmall = document.querySelector('.violet-small')
 let buttons = Array.from(document.querySelectorAll('.menu-button'))
 
+
 function changeButtonColor(array) {
     array.forEach(function(btn){
         if(btn == event.target) {
@@ -26,6 +28,13 @@ function changeButtonColor(array) {
     })
 }
 
+function mobileButtons(button) {
+    if (button.classList.contains('mobile-menu-button')) {
+        menu.style.display = 'none';
+
+    }
+}
+
 function leaveHome(){
     // want to figure out how to make this conditional based on whether or not there IS a violet to even remove...
     viewer.classList.remove("homepage-viewer")
@@ -33,12 +42,23 @@ function leaveHome(){
     footerImg.style.visibility = "visible"
 }
 
+window.addEventListener('resize', () => {
+    if (window.matchMedia('(min-width: 640px)').matches && menu.style.display == 'none') {
+        menu.style.display = 'block';
+        menu.style.backgroundColor = 'rgb(108, 193, 173)';
+    } else if (window.matchMedia("(max-width: 640px)").matches && menu.style.display == 'block'){
+        menu.style.display = 'none';
+    }
+});
+
+
 // click functions for changing content-------------------------------------->
 window.onload = function (e) {
     console.log("done")
     projectsButton.addEventListener('click', () => {
         leaveHome();
         changeButtonColor(buttons);
+        mobileButtons(projectsButton);
         mainContent.innerHTML = '';
         sideTitle.textContent = "Projects";
         sideDesc.textContent = `"The day you plant the seed is not the day you eat the fruit."`;
@@ -52,20 +72,20 @@ window.onload = function (e) {
             let image1 = document.createElement('img');
             image1.classList.add('project-image');
             image1.src = proj.img;
-            let links = document.createElement('div')
-            links.classList.add('link-box')
-            links.insertAdjacentHTML('afterbegin', proj.github)
-            links.insertAdjacentHTML('beforeend', proj.liveSite)
+            let links = document.createElement('div');
+            links.classList.add('link-box');
+            links.insertAdjacentHTML('afterbegin', proj.github);
+            links.insertAdjacentHTML('beforeend', proj.liveSite);
             let projectInfo = document.createElement('div');
             projectInfo.classList.add('project-info');
             projectInfo.insertAdjacentHTML('afterbegin', proj.tech);
-            projectInfo.insertAdjacentHTML('beforeend', proj.description)
-            projectInfo.insertAdjacentHTML('beforeend', proj.contributions)
+            projectInfo.insertAdjacentHTML('beforeend', proj.description);
+            projectInfo.insertAdjacentHTML('beforeend', proj.contributions);
             projectContainer.appendChild(projectTitle);
             projectContainer.appendChild(image1);
-            projectContainer.appendChild(links)
+            projectContainer.appendChild(links);
             projectContainer.appendChild(projectInfo);
-            space.appendChild(projectContainer)
+            space.appendChild(projectContainer);
         })
         setTimeout(() => {
             mainContent.appendChild(space);
@@ -73,10 +93,10 @@ window.onload = function (e) {
 
     })
 
-
     aboutButton.addEventListener('click', () => {
         leaveHome();
         changeButtonColor(buttons);
+        mobileButtons(aboutButton);
         mainContent.innerHTML = '';
         sideTitle.textContent = "About";
         sideDesc.textContent = `"Ramona always longed for glorious surprises. That was the way she was." --Beverly Cleary`;
@@ -86,14 +106,14 @@ window.onload = function (e) {
         mainContent.appendChild(bioPic);
         let bio = document.createElement('div');
         bio.classList.add('bio');
-        bio.insertAdjacentHTML('afterbegin', aboutKD.bio)
-        mainContent.appendChild(bio)
-
+        bio.insertAdjacentHTML('afterbegin', aboutKD.bio);
+        mainContent.appendChild(bio);
     })
 
     skillsButton.addEventListener('click', () => {
         leaveHome();
         changeButtonColor(buttons);
+        mobileButtons(skillsButton);
         mainContent.innerHTML = '';
         sideTitle.textContent = "Skills";
         sideDesc.textContent = `"Why not go out on a limb? That’s where the fruit is." --Mark Twain`;
@@ -113,47 +133,58 @@ window.onload = function (e) {
         softSkills.classList.add('soft-skills');
         softSkills.insertAdjacentHTML('afterbegin', skillz.soft);
         mainContent.appendChild(softSkills);
-
-
     })
 
     contactButton.addEventListener('click', () => {
         changeButtonColor(buttons);
         leaveHome();
+        mobileButtons(contactButton);
+        sideTitle.textContent = "Contact";
+        sideDesc.textContent = ``;
         mainContent.innerHTML = '';
         let contactBox = document.createElement('div');
         contactBox.classList.add('contact-box');
         mainContent.appendChild(contactBox)
         let contactTitle = document.createElement('div');
         contactTitle.classList.add('title');
-        contactTitle.textContent = "Contact Me"
+        contactTitle.textContent = "Get in touch..."
         contactBox.appendChild(contactTitle);
+        let bioLinks = document.createElement('div')
+        bioLinks.classList.add('bio-links')
+        bioLinks.insertAdjacentHTML('afterbegin', contact.links);
+        contactBox.appendChild(bioLinks);
         let contactText = document.createElement('div');
         contactText.classList.add('contact-text');
         contactText.textContent = contact.text;
         contactBox.appendChild(contactText);
         contactText.insertAdjacentHTML('beforeend', contact.aside)
-        let bioLinks = document.createElement('div')
-        bioLinks.classList.add('bio-links')
-        bioLinks.insertAdjacentHTML('afterbegin',
-        contact.links);
-        contactBox.appendChild(bioLinks);
+        contactText.insertAdjacentHTML('beforeend', contact.arts)
     })
 
     homeButton.addEventListener('click', () => {
         changeButtonColor(buttons);
+        mobileButtons(homeButton);
         mainContent.innerHTML = '';
         viewer.classList.add("homepage-viewer");
         mainContent.classList.add("homepage-viewer");
         footerImg.style.visibility = "hidden";
         sideTitle.textContent = "Welcome";
-        sideDesc.textContent = `"Plant your own gardens and decorate your own soul, instead of waiting for someone to bring you flowers." --Jorge Luis Borges`;
+        sideDesc.textContent = `"So plant your own gardens and decorate your own soul, instead of waiting for someone to bring you flowers." --Jorge Luis Borges`;
         let drawing = document.createElement('div');
         drawing.classList.add("drawing");
         mainContent.appendChild(drawing);
         let violetMain = document.createElement('img');
         violetMain.classList.add("violet-main");
-        violetMain.src = 'images/other/violet1.png';
+        violetMain.src = 'images/other/violet-home.png';
         drawing.appendChild(violetMain);
     })
+
+    mobileMenu.addEventListener('click', () => {
+        menu.style.display = 'block';
+        menu.style.backgroundColor = "rgb(159, 155, 238)";
+        buttons.forEach(function(button) {
+            button.classList.add('mobile-menu-button')
+        })
+    })
+
 }

@@ -1,26 +1,4 @@
-/* 
-font-family: 'Josefin Sans', sans-serif;
-font-family: 'Crimson Text', serif;
-font-family: 'Muli', sans-serif;
-font-family: 'Arvo', serif;
-font-family: 'Rokkitt', serif;
-font-family: 'Enriqueta', serif;
-font-family: 'Alegreya Sans', sans-serif;
-font-family: 'B612', sans-serif;
-font-family: 'Quattrocento Sans', sans-serif;
-font-family: 'Amaranth', sans-serif;
-font-family: 'Rosario', sans-serif;
-font-family: 'Cherry Swash', cursive;
-font-family: 'Nova Oval', cursive;
-rgb(236, 174, 147);
-*/
-
-/* USE MEDIA QUERIES TO UPDATE MARGIN BOTTOM so little image isn't cut off! */
-
-
 /* MOBILE ===================================================================== */
-/* @media(min-width: 300px) and (max-width: 640px) { */
-
 html {
     height: 100%;
     background-color: rgb(159, 155, 238);
@@ -45,20 +23,35 @@ nav {
 }
 
 .menu {
-    /* display: none; */
-    list-style: none;
-    position: absolute;
-    right: 0;
-    font-family: 'Amaranth', sans-serif;
-    color: rgb(23, 23, 23);
+    display: none;
 }
 
 .mobile-menu {
+    display: block;
+    font-size: 18pt;
+    list-style: none;
+    position: absolute;
+    right: 0;
+    margin: 1rem;
+}
 
+.mobile-menu i {
+    padding: 0.25rem 05.rem;
+}
+
+.mobile-backdrop {
+    display: none;
+    height: 100vh;
+    width: 100vh;
+    z-index: 5;
+    background-color:rgb(108, 193, 173);
+    opacity: 0.5;
 }
 
 li {
-    display: inline;
+    font-family: 'Amaranth', sans-serif;
+    display: block;
+    text-align: center;
     padding: 0.5rem 1rem;
     margin-right: 1rem;   
 }
@@ -66,10 +59,6 @@ li {
 li:hover {
     background-color: rgb(159, 155, 238);
     cursor: pointer;
-}
-
-li:active{
-    background-color: rgb(159, 155, 238);
 }
 
 .focus{
@@ -87,17 +76,11 @@ li:active{
     margin-top: 3.25rem
 }
 
-.main-wrapper p {
-    font-family: 'Alegreya Sans', sans-serif;
-    font-size: 13pt;
-    color: rgb(23, 23, 23)
-}
-
 .side-bar {
     box-sizing: border-box;
     width: 13rem;
     height: auto;
-    margin: 1rem 1rem 1rem 1rem;
+    margin: 0.5rem;
     padding: 0.75rem;
     text-align: center;
     color: rgb(23, 23, 23)
@@ -113,8 +96,10 @@ li:active{
 
 .side-bar p{
     font-style: italic;
-    font-size: 11pt;
-    color: rgb(23, 23, 23)
+    text-align: center;
+    font-size: 13pt;
+    color: rgb(23, 23, 23);
+    font-family: 'Alegreya Sans', sans-serif;
 }
 
 .viewer {
@@ -151,28 +136,29 @@ li:active{
     opacity: 0.8;
 }
 
+.drawing p {
+    font-family: 'Amaranth', sans-serif;
+    margin: 5px;
+}
+
 .violet-main {
-    width: 10rem;
+    width: 13rem;
 }
 
 .b-r-corner {
     display: none;
 }
 
-.violet-small{
-    width: 5rem;
-}
-
 /* project display CSS -------------------------------------------------------------- */
-
 .project {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .title {
     font-family: 'Amaranth', sans-serif;
-    font-size: 18pt;
+    font-size: 16pt;
     color: rgb(23, 23, 23); 
+    margin: 1rem 0;
 }
 
 .project-image {
@@ -182,11 +168,17 @@ li:active{
 
 .project-info {
     padding: 0.5rem;
+    font-size: 16pt;
     color: rgb(23, 23, 23);
 }
 
+.project-info p {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 14pt;
+}
+
 .link-box {
-    font-family: 'Muli', sans-serif;
+    font-family: 'Alegreya Sans', sans-serif;
     margin: 0.5rem;
 }
 
@@ -198,13 +190,7 @@ li:active{
     padding: 0.5rem 1rem;
 }
 
-.link-box a:hover{
-    color: rgb(107, 102, 198);
-}
-
 /* about display CSS -------------------------------------------------------------- */
-
-
 .bio-pic {
     width: 200px;
     margin: 1rem auto;
@@ -215,11 +201,11 @@ li:active{
 .bio, .edu, .extra{
     text-align: center;
     margin: 0.5rem;
+    font-size: 14pt;
+    font-family: 'Alegreya Sans', sans-serif;
 }
 
-
 /* skills page -------------------------------------------------------> */
-
 .skills-icons {
     display: flex;
     flex-direction: row;
@@ -227,11 +213,11 @@ li:active{
     align-items: center;
     flex-wrap: wrap;
     width: 90%;
-    min-width: 250px;
+    min-width: 225px;
     color: rgb(64, 177, 151);
-    font-size: 32pt;
-    padding: 1rem;
-    margin: 2rem; 
+    font-size: 26pt;
+    padding: 0.5rem;
+    margin: 1rem; 
     opacity: 0.7;
     border: 2px dashed rgb(159, 155, 238);
 }
@@ -250,25 +236,33 @@ li:active{
 
 .skill-icon p{
     font-size: 11pt;
+    font-family: 'Alegreya Sans', sans-serif;
 }
 
 .soft-skills {
     text-align: center;
+    font-size: 14pt;
+    font-family: 'Alegreya Sans', sans-serif;
 }
 
 /* contact page ------------------------------------------------------------> */
-
 .contact-box{
-    margin-top: 25%;
+    margin-top: 15%;
+    width: 95%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.contact-box a{
+     color: rgb(124, 120, 214);
+}
+
 .contact-text{
     font-family: 'Alegreya Sans', sans-serif;
+    font-size: 14pt;
     text-align: center;
-    margin: 2rem;
+    margin: 1rem;
 }
 
 .bio-links{
@@ -285,13 +279,14 @@ li:active{
     color:  rgb(108, 193, 173);
 }
 
-.bio-links a:hover {
-    color: rgb(159, 155, 238)
-}
-
 .contact-icon {
-    margin: 1rem;
-    text-align: center;
+    margin: 5px;
+    display: flex;
+    font-family: 'Alegreya Sans', sans-serif;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     align-self: flex-end;
 }
 
@@ -299,32 +294,214 @@ li:active{
     margin-top: 0.5rem;
 }
 
-
 /* TABLET Portrait ============================================================ */
 @media (min-width: 640px) and (max-width: 1024px) {
+
+    nav {
+        background-color: rgb(108, 193, 173);
+        width: 100%;
+        height: 3.25rem;
+        position: fixed;
+        top: 0;   
+        z-index: 10;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        list-style: none;
+        position: absolute;
+        right: 0;
+        font-family: 'Amaranth', sans-serif;
+        color: rgb(23, 23, 23);
+    }
+
+    li {
+        display: inline;
+        padding: 0.5rem 1rem;
+        margin-right: 1rem;   
+    }
+
+    .main-wrapper {
+        margin-top: 3.25rem;
+        /* justify-content: space-evenly; */
+    }
+
+    .side-bar {
+        margin: 0.5rem;
+    }
+
+    .viewer {
+        width: 75%; 
+    }
+
+
+    .violet-main {
+        width: 16rem;
+    }
+
+    /* project display CSS -------------------------------------------------------------- */
+    .project {
+        margin-bottom: 1rem;
+    }
+
+    .title {
+        font-size: 18pt;
+    }
+
+    /* about display CSS -------------------------------------------------------------- */
+
+    /* skills page -------------------------------------------------------> */
+
+    /* contact page ------------------------------------------------------------> */
 
 }
 
 /* TABLET Landscape =========================================================== */
-@media (max-width: 1024px) and (min-width: 960px) and (max-height: 768px) and (min-height: 692px) {
+@media (max-width: 1024px) and (min-width: 960px){
+
+    .mobile-menu {
+        display: none;
+    }
+
+     .menu {
+        display: block;
+        list-style: none;
+        position: absolute;
+        right: 0;
+        font-family: 'Amaranth', sans-serif;
+        color: rgb(23, 23, 23);
+    }
+
+    .main-wrapper {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 3.25rem
+    }
+
+    .side-bar {
+        margin: 1rem 1rem 1rem 2rem;
+        padding: 0.75rem;
+        align-self: center;
+    }
+
+    .side-bar p{
+        font-size: 11pt;
+    }
+
+    .viewer {
+        min-width: 38rem;
+        max-width: 38rem;
+        height: 90vh;
+        align-self: flex-end;
+    }
+
+    .content {
+        padding: 1rem;
+        min-width: 34rem;
+        max-width: 34rem;
+        margin: 0 auto;
+    }
+
+    .homepage-viewer{
+        display: flex;     
+    }
+
+    .homepage-content{
+        align-self: center;
+    }
+
+    .drawing{
+        display: flex;
+        flex-direction: column;
+        opacity: 0.8;
+    }
+
+    .violet-main {
+        width: 18rem;
+    }
+
+    .b-r-corner {
+        display: block;
+        visibility: hidden;
+        width: 13rem;
+        height: 2rem;
+        align-self: flex-end;
+        margin: 1rem 3rem 11rem 1rem;
+        text-align: center;
+    }
+
+    .violet-small{
+        width: 5rem;
+    }
+
+    /* project display CSS -------------------------------------------------------------- */
+
+
+    .project-image {
+        width: 34rem;
+    }
+
+    .project p {
+        font-size: 13pt;
+    }
+
+    /* about display CSS -------------------------------------------------------------- */
+    .bio-pic {
+        width: 19rem;
+        border-radius: 50%;
+    }
+
+    .bio {
+        font-size: 13pt;
+    }
+
+    /* skills page -------------------------------------------------------> */
+
+    .skills-icons {
+        width: 30rem;
+        font-size: 32pt;
+        padding: 1rem;
+        margin: 2rem; 
+        
+    }
+
+    .soft-skills {
+        font-size: 13pt;
+    }
+
+    /* contact page ------------------------------------------------------------> */
+    .contact-text{
+        margin: 1rem 2rem;
+        font-size: 13pt;
+    }
+
+    .bio-links{
+        justify-content: center;
+        align-content: center;
+    }
+
+    .contact-icon {
+        margin: 1rem;
+    }
 
 }
 
 /* DESKTOP ==================================================================== */
 @media (min-width: 1024px) {
 
-
     html {
-        height: 100%;
-        background-color:rgb(184, 184, 184);
         overflow: hidden;
     }
 
     body {
-        margin: 0;
-        background: linear-gradient(to bottom,rgb(108, 193, 173)5%, rgb(184, 184, 184));
-        background-repeat: no-repeat;
-        background-attachment: fixed;
         overflow: hidden;
     }
 
@@ -336,7 +513,12 @@ li:active{
         top: 0;   
     }
 
+    .mobile-menu {
+        display: none;
+    }
+
     .menu {
+        display: block;
         list-style: none;
         position: absolute;
         right: 0;
@@ -355,10 +537,6 @@ li:active{
         cursor: pointer;
     }
 
-    li:active{
-        background-color: rgb(159, 155, 238);
-    }
-
     .focus{
         background-color: rgb(159, 155, 238);
     }
@@ -373,54 +551,31 @@ li:active{
         margin-top: 3.25rem
     }
 
-    .main-wrapper p {
-        font-family: 'Alegreya Sans', sans-serif;
-        font-size: 13pt;
-        color: rgb(23, 23, 23)
-    }
-
     .side-bar {
-        box-sizing: border-box;
-        width: 13rem;
-        height: auto;
         margin: 1rem 1rem 1rem 2rem;
-        padding: 0.75rem;
         align-self: center;
-        color: rgb(23, 23, 23)
     }
 
     .side-bar span {
-        font-family: 'Amaranth', sans-serif;
-        font-style: bold;
         padding: 0.5rem 1rem;
-        background-color:  rgb(159, 155, 238);
-        color: rgb(23, 23, 23)
     }
 
     .side-bar p{
-        font-style: italic;
         font-size: 11pt;
-        color: rgb(23, 23, 23)
     }
 
     .viewer {
-        width: 40rem;
+        min-width: 40rem;
+        max-width: 40rem;
         height: 90vh;
-        margin: 0 1rem;
-        padding: 0.5rem;
         align-self: flex-end;
-        overflow: scroll;
-        background: linear-gradient(to bottom,rgb(222, 222, 222), rgb(184, 184, 184));
     }
 
     .content {
         padding: 1rem;
-        width: 37rem;
+        min-width: 36rem;
+        max-width: 36rem;
         margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 
 
@@ -432,14 +587,8 @@ li:active{
         align-self: center;
     }
 
-    .drawing{
-        display: flex;
-        flex-direction: column;
-        opacity: 0.8;
-    }
-
     .violet-main {
-        width: 15rem;
+        width: 20rem;
     }
 
     .b-r-corner {
@@ -450,7 +599,6 @@ li:active{
         align-self: flex-end;
         margin: 1rem 3rem 11rem 1rem;
         text-align: center;
-        font-family: 'Muli', sans-serif;;
     }
 
     .violet-small{
@@ -464,123 +612,55 @@ li:active{
     }
 
     .title {
-        font-family: 'Amaranth', sans-serif;
         font-size: 18pt;
-        color: rgb(23, 23, 23);
-        
+    }
+
+    .project p {
+        font-size: 13pt;
     }
 
     .project-image {
         width: 38rem;
-        margin: 0.5rem 0;
-    }
-
-    .project-info {
-        padding: 0.5rem;
-        color: rgb(23, 23, 23);
-    }
-
-    .link-box {
-        font-family: 'Muli', sans-serif;
-        margin: 0.5rem;
-    }
-
-    .link-box a {
-        background-color:  rgb(108, 193, 173);
-        text-decoration: none;
-        color: rgb(23, 23, 23); 
-        margin-right: 0.5rem;
-        padding: 0.5rem 1rem;
     }
 
     .link-box a:hover{
-        /* text-decoration: underline; */
         color: rgb(107, 102, 198);
     }
 
     /* about display CSS -------------------------------------------------------------- */
-
-
     .bio-pic {
         width: 19rem;
-        margin: 1rem auto;
-        border-radius: 50%;
-        align-self: center;
     }
 
-    .bio, .edu, .extra{
-        text-align: center;
-        margin: 0.5rem;
+    .bio {
+        font-size: 13pt;
     }
-
 
     /* skills page -------------------------------------------------------> */
-
     .skills-icons {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
         width: 30rem;
-        color: rgb(64, 177, 151);
         font-size: 32pt;
         padding: 1rem;
         margin: 2rem; 
-        opacity: 0.7;
-        border: 2px dashed rgb(159, 155, 238);
-    }
-
-    .skill-icon {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: 1rem;
     }
 
     .skill-icon:hover{
         color:  rgb(108, 193, 173);
     }
 
-    .skill-icon p{
-        font-size: 11pt;
-    }
-
     .soft-skills {
-        text-align: center;
+        font-size: 13pt;
     }
 
     /* contact page ------------------------------------------------------------> */
-
-    .contact-box{
-        margin-top: 25%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-    }
-
     .contact-text{
-        font-family: 'Alegreya Sans', sans-serif;
-        text-align: center;
-        margin: 2rem;
+        margin: 1 rem 2rem;
+        font-size: 13pt;
     }
 
     .bio-links{
-        display: flex;
-        align-items: center;
         justify-content: center;
         align-content: center;
-    }
-
-    .bio-links i {
-        font-size: 22pt;
-    }
-
-    .bio-links a {
-        text-decoration: none;
-        color:  rgb(108, 193, 173);
     }
 
     .bio-links a:hover {
@@ -589,15 +669,6 @@ li:active{
 
     .contact-icon {
         margin: 1rem;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        align-self: flex-end;
-    }
-
-    .contact-icon-text{
-        margin-top: 0.5rem;
     }
 
 

@@ -5,7 +5,7 @@ const projects = [
         img: `images/emoceans/newmooddesktop2.png`,
         tech: `<p><strong>Technologies used:</strong> HTML, CSS, JavaScript, chroma.js, datamuse API, Node.js, express, MySQL, EJS</p>`,
         github: `<a href="https://github.com/katiejduane/emOceans--backEndProject">GitHub</a>`,
-        liveSite: `<span>Coming soon!</span>`,
+        liveSite: `<span>Live site OTW!</span>`,
         description: `<p><strong>Description:</strong> I once attempted to knit a scarf according to how I felt everyday, using different colors of yarn. This quickly became a tangled mess, but the idea stuck! emOceans is a web application that allows you to take note of your mood every day using color and language. Each day (and each mood, each memory) forms a tiny drop in the vast and ever-shifting ocean that makes up every one of us. We hoped to make the observation and appreciation of these shifts and waves more accessible, helpful, and more beautiful.</p>`,
         contributions: `<p><strong>Contributions:</strong> Original concept, implementation of chroma.js for color manipulation, implementation of datamuse API, router management, registration connection, database schema, database connection, data visualization using JSON.stringify along with JS and CSS.</p>`,
     },
@@ -73,14 +73,6 @@ const skillz =
                     <p class="skill-name">Python</p>
                 </div>
                 <div class="skill-icon">
-                    <i class="devicon-mysql-plain"></i>
-                    <p class="skill-name">mySQL</p>
-                </div>
-                <div class="skill-icon">
-                    <i class="devicon-git-plain"></i>
-                    <p class="skill-name">Git</p>
-                </div>
-                <div class="skill-icon">
                     <i class="devicon-html5-plain-wordmark"></i>
                     <p class="skill-name">HTML</p>
                 </div>
@@ -101,11 +93,19 @@ const skillz =
                     <p class="skill-name">jQuery</p>
                 </div>
                 <div class="skill-icon">
+                    <i class="devicon-mysql-plain"></i>
+                    <p class="skill-name">mySQL</p>
+                </div>
+                <div class="skill-icon">
+                    <i class="devicon-git-plain"></i>
+                    <p class="skill-name">Git</p>
+                </div>
+                <div class="skill-icon">
                     <i class="devicon-amazonwebservices-original"></i>
                     <p class="skill-name">AWS</p>
                 </div>
                 <div class="skill-icon">
-                    <i class="devicon-apache-line"></i>
+                    <i class="devicon-apache-plain"></i>
                     <p class="skill-name">Apache</p>
                 </div>
                 <div class="skill-icon">
@@ -123,9 +123,12 @@ const skillz =
     }
 
     const contact = {
-        text: `If you'd like to contact me or learn more about my professional experiences, please click on any of the links below`,
+        text: `If you'd like to contact me or learn more about my professional experiences, please click on any of the links above.`,
         aside: `<p>A quick aside: I chose to draw a violet for the homepage because they grow all over the world, in varying 
         climates and locales. They are symbolic of spring, humility, candor, and intuition.</p>`,
+        arts: `<p>I'm also a practicing writer and artist. If you're interested in reading some of my work, you can find two recently published
+        pieces: a poem about time, here: <a href="./creative/Jasper.pdf" target="blank">Jasper</a>, and an essay about a star cluster and mythology, here: <a href="https://www.themanifeststation.net/2018/06/04/m45/" target="blank">M45</a>. 
+        I also wrote a <a href="http://www.eatthispoem.com/city-guides/rochester" target="blank">literary city guide</a> for Rochester, NY. Of course, I have several more projects in the works! :)`,
         links: 
         `<div class="contact-icon">
             <a href="https://github.com/katiejduane"><i class="devicon-github-plain"></i></a>
@@ -140,7 +143,7 @@ const skillz =
             <p class="contact-icon-text">Email</p>
         </div>
         <div class="contact-icon">
-            <i class="far fa-file"></i>
+            <a href="./images/other/katiejduane2019.pdf" target="blank" download><i class="far fa-file"></i></a>
             <p class="contact-icon-text">Resume</p>
         </div>`
     }
