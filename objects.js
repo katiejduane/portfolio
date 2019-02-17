@@ -4,7 +4,7 @@ const projects = [
         title: 'emOceans',
         img: `images/emOceans/newmooddesktop2.png`,
         tech: `<p><strong>Technologies used:</strong> HTML, CSS, JavaScript, chroma.js, datamuse API, Node.js, express, MySQL, EJS</p>`,
-        github: `<a href="https://github.com/katiejduane/emOceans--backEndProject target="blank"">GitHub</a>`,
+        github: `<a href="https://github.com/katiejduane/emOceans--backEndProject" target="blank">GitHub</a>`,
         liveSite: `<span>Live site OTW!</span>`,
         description: `<p><strong>Description:</strong> I once attempted to knit a scarf according to how I felt everyday, using different colors of yarn. This quickly became a tangled mess, but the idea stuck! emOceans is a web application that allows you to take note of your mood every day using color and language. Each day (and each mood, each memory) forms a tiny drop in the vast and ever-shifting ocean that makes up every one of us. We hoped to make the observation and appreciation of these shifts and waves more accessible, helpful, and more beautiful.</p>`,
         contributions: `<p><strong>Contributions:</strong> Original concept, implementation of chroma.js for color manipulation, implementation of datamuse API, router management, registration connection, database schema, database connection, data visualization using JSON.stringify along with JS and CSS.</p>`,
@@ -14,8 +14,8 @@ const projects = [
         title: 'Pithos',
         img: `images/pithos/desktopgradient2.png`,
         tech: `<p><strong>Technologies used:</strong> HTML, CSS, JavaScript, jQuery, Google Maps API, Adobe Photoshop for wireframing</p>`,
-        github: `<a href="https://github.com/katiejduane/Pithos--FrontEndProject target="blank"">GitHub</a>`,
-        liveSite: `<a href="https://katiejduane.com/pithos target="blank">Live Site</a>`,
+        github: `<a href="https://github.com/katiejduane/Pithos--FrontEndProject" target="blank">GitHub</a>`,
+        liveSite: `<a href="https://katiejduane.com/pithos" target="blank">Live Site</a>`,
         description: `<p><strong>Description:</strong> We wanted to create a space that would allow the user to experience an 'ordinary' thing in an unusual way. We were interested in ecosystems, and wanted to connect our ecosystem to the state of Georgia (home), and also the larger realms of history, mythology, and health; which are their own kinds of ecosystems, or containers. Pithos.</p>`,
         contributions: `<p><strong>Contributions:</strong> Concept, plant and animal research, wireframes, CSS for mobile and tablet, JavaScript for 'plant' and 'animal' pages as well as map display and positioning.</p>`,
 
@@ -25,7 +25,7 @@ const projects = [
         title: 'adultING',
         img: `images/adulting/4forest.png`, 
         tech: `<p><strong>Technologies used:</strong> Python, Pygame, Tiled for building UIs.</p>`,
-        github:`<a href="https://github.com/katiejduane/adultING target="blank"">GitHub</a>`,
+        github:`<a href="https://github.com/katiejduane/adultING" target="blank">GitHub</a>`,
         liveSite: '',
         description: `<p><strong>Description:</strong> Since I'm not much of a gamer, I wanted to create a game that instead resembled life; how the choices we make, no matter how 'right' or 'wrong' they seem, usually have both positive and negative consequences. Based on your choices throughout the game, you win and lose points in categories such as 'Health', 'Love', 'Growth', and 'Adventure'. You win, or life wins!</p>`,
         contributions: `<p><strong>Contributions:</strong> I created all the interfaces with Tiled and Adobe Photoshop, and wrote Python for game play using Pygame.</p>`
