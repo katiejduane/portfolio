@@ -434,12 +434,13 @@ li:hover {
         width: 13rem;
         height: 2rem;
         align-self: flex-end;
-        margin: 1rem 3rem 11rem 1rem;
+        margin: 1rem 3rem 13rem 1rem;
         text-align: center;
     }
 
     .violet-small{
         width: 5rem;
+        opacity: 0.8;
     }
 
     /* project display CSS -------------------------------------------------------------- */
@@ -597,12 +598,13 @@ li:hover {
         width: 13rem;
         height: 2rem;
         align-self: flex-end;
-        margin: 1rem 3rem 11rem 1rem;
+        margin: 1rem 3rem 13rem 1rem;
         text-align: center;
     }
 
     .violet-small{
         width: 5rem;
+        opacity: 0.8;
     }
 
     /* project display CSS -------------------------------------------------------------- */
