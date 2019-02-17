@@ -15,7 +15,7 @@ const projects = [
         img: `images/pithos/desktopgradient2.png`,
         tech: `<p><strong>Technologies used:</strong> HTML, CSS, JavaScript, jQuery, Google Maps API, Adobe Photoshop for wireframing</p>`,
         github: `<a href="https://github.com/katiejduane/Pithos--FrontEndProject">GitHub</a>`,
-        liveSite: `<a href="www.katiejduane.com/pithos">Live Site</a>`,
+        liveSite: `<a href="https://katiejduane.com/pithos">Live Site</a>`,
         description: `<p><strong>Description:</strong> We wanted to create a space that would allow the user to experience an 'ordinary' thing in an unusual way. We were interested in ecosystems, and wanted to connect our ecosystem to the state of Georgia (home), and also the larger realms of history, mythology, and health; which are their own kinds of ecosystems, or containers. Pithos.</p>`,
         contributions: `<p><strong>Contributions:</strong> Concept, plant and animal research, wireframes, CSS for mobile and tablet, JavaScript for 'plant' and 'animal' pages as well as map display and positioning.</p>`,
 
