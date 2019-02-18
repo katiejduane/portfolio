@@ -31,7 +31,6 @@ function changeButtonColor(array) {
 function mobileButtons(button) {
     if (button.classList.contains('mobile-menu-button')) {
         menu.style.display = 'none';
-
     }
 }
 
@@ -46,6 +45,9 @@ window.addEventListener('resize', () => {
     if (window.matchMedia('(min-width: 640px)').matches && menu.style.display == 'none') {
         menu.style.display = 'block';
         menu.style.backgroundColor = 'rgb(108, 193, 173)';
+        buttons.forEach((button) => {
+            button.classList.remove('mobile-menu-button')
+        })
     } else if (window.matchMedia("(max-width: 640px)").matches && menu.style.display == 'block'){
         menu.style.display = 'none';
     }
