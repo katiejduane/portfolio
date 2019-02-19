@@ -9,7 +9,7 @@ const aboutButton = document.querySelector('#about-button')
 const contactButton = document.querySelector('#contact-button')
 let buttons = Array.from(document.querySelectorAll('.menu-button'))
 let mainContent = document.querySelector('.content')
-let projectsList = document.querySelector('.projects-list')
+let projectsBox = document.querySelector('.projects-box')
 
 // for page load & project creations
 window.onload = function (e) {
@@ -17,7 +17,7 @@ window.onload = function (e) {
     projects.forEach((project) => {
         let projectContainer = document.createElement('div');
         projectContainer.classList.add('project');
-        projectsList.appendChild(projectContainer);
+        projectsBox.appendChild(projectContainer);
         let projectTitle = document.createElement('div');
         projectTitle.classList.add('title');
         projectTitle.textContent = project.title;
@@ -44,7 +44,7 @@ window.onload = function (e) {
         projectContainer.appendChild(projectDesc);
     })
     // setTimeout(() => {
-    //     mainContent.appendChild(projectsList);
+    //     mainContent.appendChild(projectsBox);
     // }, 100)
 
 };
