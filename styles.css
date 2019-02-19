@@ -1,0 +1,752 @@
+html {
+    height: 100%;
+    background-color: rgb(140, 140, 238);
+    overflow: auto;
+    scroll-behavior: smooth;
+    /* ^^ do the JS function ASAP for more specific scroll!!! ^^ */
+}
+
+body {
+    margin: 0;
+    /* background: linear-gradient(to bottom,rgb(126, 190, 238)5%, rgb(184, 184, 184)); */
+    background-color: papayawhip;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: scroll;
+}
+
+nav {
+    background-color: rgb(140, 140, 238);
+    width: 100%;
+    height: 3.25rem;
+    position: fixed;
+    top: 0;   
+    z-index: 10;
+}
+
+.menu {
+    display: none;
+}
+
+.mobile-menu {
+    display: block;
+    font-size: 18pt;
+    list-style: none;
+    position: absolute;
+    right: 0;
+    margin: 1rem;
+}
+
+.mobile-menu i {
+    padding: 0.25rem 05.rem;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.menu-button {
+    font-family: 'Amaranth', sans-serif;
+    display: block;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;   
+    color: rgb(40, 40, 40);
+    background-color: rgb(243, 160, 72);
+    text-decoration: none;
+}
+
+.menu-button:hover {
+    background-color: papayawhip;
+    cursor: pointer;
+}
+
+.focus{
+    background-color: papayawhip;
+}
+
+.main-wrapper {
+    width: 100%;
+    height: 100vh;
+    overflow: scroll;
+}
+
+.content {
+    padding: 0.5rem 0rem;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.divider-purple {
+    background-color:rgb(140, 140, 238);
+    width: 80%;
+    height: 2px;
+    box-shadow: 0px;
+    outline: none;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.landing {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.drawing {
+    /* display: flex;
+    flex-direction: column; */
+    align-self: center;
+    margin: 1rem;
+    opacity: 0.9;
+}
+
+.violet-main {
+    padding: 1rem;
+    width: 15rem;
+    opacity: 0.9;
+}
+
+.section-header {
+    font-family: 'Amaranth', sans-serif;
+    font-size: 18pt;
+    text-align: center;
+    color: rgb(23, 23, 23); 
+    margin: 1rem 0;
+}
+
+.sub-header {
+    font-family: 'Amaranth', sans-serif;
+    font-size: 16pt;
+    text-align: center;
+    color: rgb(23, 23, 23); 
+    margin: 1rem 0;
+
+}
+
+footer {
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    background: linear-gradient(to bottom,papayawhip,rgb(140, 140, 238));
+}
+
+.thankyou {
+    margin: 0rem;
+    padding: 0.5rem;
+    font-family: 'Amaranth', sans-serif;
+}
+
+.violet-small {
+    width: 5rem;
+    opacity: 0.8;
+}
+
+/* about css ------------------------------------------------------------------------ */
+.about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bio-pic {
+    width: 60%;
+    border-radius: 50%;
+}
+
+.about-heading {
+    text-align: center;
+    font-family: 'Amaranth', sans-serif;
+}
+
+.about-text {
+    width: 90%;
+    font-size: 16pt;
+}
+
+.bio {
+    text-align: center;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+
+/* project display CSS -------------------------------------------------------------- */
+.projects-list {
+    width: 100%;
+}
+
+.project {
+    margin: 0 auto 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.title {
+    font-family: 'Amaranth', sans-serif;
+    font-size: 16pt;
+    color: rgb(23, 23, 23); 
+    margin: 0.25rem 0;
+}
+
+.project-image {
+    width: 100%;
+    margin: 0.5rem 0;
+}
+
+.link-box {
+    text-align: center;
+    font-family: 'Alegreya Sans', sans-serif;
+    margin: 1rem;
+}
+
+.link-box a {
+    background-color:  rgb(140, 140, 238);
+    text-decoration: none;
+    color: rgb(23, 23, 23); 
+    margin-right: 0.5rem;
+    padding: 0.5rem 1rem;
+}
+
+.project-info {
+    text-align: center;
+    font-family: 'Alegreya Sans', sans-serif;
+    padding: 0.5rem;
+    font-size: 14pt;
+    color: rgb(23, 23, 23);
+}
+
+.project-info span {
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+.project-info i {
+    padding-right: 0.25rem;
+    font-size: 18pt;
+    color: rgb(243, 160, 72);
+    vertical-align: middle;
+}
+
+.project-info i:hover {
+    color: rgb(140, 140, 238);;
+}
+
+.description {
+    margin: 1rem auto;
+    width: 90%;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 14pt;
+    text-align: center;
+}
+
+/* skills page -------------------------------------------------------> */
+.skills-box {
+    border: 2px dashed rgb(243, 160, 72);
+    width: 85%;
+    margin: 0 auto 2rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    min-width: 200px;
+    color: rgb(140, 140, 238);
+    font-size: 28pt;
+    padding: 0.5rem; 
+    opacity: 0.8;
+    margin: 0 auto;
+}
+
+.skill-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem;
+}
+
+.skill-icon:hover{
+    color:  rgb(101, 101, 207);
+}
+
+.skill-icon p {
+    font-size: 11pt;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+.soft-skills {
+    text-align: center;
+    width: 90%;
+    font-size: 14pt;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+.soft-skills {
+    margin: 0 auto;
+}
+
+.subtitle {
+    text-align: center;
+    font-family:'Alegreya Sans', sans-serif;
+    font-size: 14pt;
+    margin: 0.25rem 0rem 0.25rem 0rem;
+    color: rgb(23, 23, 23);
+}
+
+/* contact page ------------------------------------------------------------> */
+.contact-box{
+    margin: 0 auto;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-box a{
+    color: rgb(140, 140, 238);
+}
+
+.contact-text{
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 14pt;
+    text-align: center;
+    margin: 1rem;
+}
+
+.contact-links{
+    display: flex;
+    align-items: center;
+}
+
+.contact-links i {
+    font-size: 22pt;
+}
+
+.contact-links a {
+    text-decoration: none;
+    color:  rgb(140, 140, 238);
+}
+
+.contact-icon {
+    margin: 5px;
+    display: flex;
+    font-family: 'Alegreya Sans', sans-serif;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    align-self: flex-end;
+}
+
+.contact-icon-text{
+    margin-top: 0.5rem;
+}
+
+/* TABLET Portrait ============================================================ */
+@media (min-width: 640px) and (max-width: 1024px) {
+
+    nav {
+        background-color: rgb(140, 140, 238);
+        width: 100%;
+        height: 3.25rem;
+        position: fixed;
+        top: 0;   
+        z-index: 10;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        list-style: none;
+        position: absolute;
+        right: 0;
+        font-family: 'Amaranth', sans-serif;
+        color: rgb(23, 23, 23);
+    }
+
+    .menu-button {
+        display: inline;
+        padding: 0.5rem 1rem;
+        margin-right: 1rem;   
+    }
+
+    .content {
+        padding: 0.5rem 0rem;
+        width: 80%;
+    }
+
+    .violet-main {
+        width: 22rem;
+    }
+
+    /* about display CSS -------------------------------------------------------------- */
+    .bio-pic {
+        width: 50%;
+        border-radius: 50%;
+    }
+
+    .about-text {
+        width: 70%;
+        font-size: 14pt;
+    }
+
+    /* project display CSS -------------------------------------------------------------- */
+    .project {
+        margin: 0 auto 1rem;
+        width: 90%;
+    }
+
+    .title {
+        font-size: 18pt;
+    }
+
+    /* skills page -------------------------------------------------------> */
+
+    /* contact page ------------------------------------------------------------> */
+
+}
+
+/* TABLET Landscape =========================================================== */
+@media (max-width: 1024px) and (min-width: 960px){
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        list-style: none;
+        position: absolute;
+        right: 0;
+        font-family: 'Amaranth', sans-serif;
+        color: rgb(23, 23, 23);
+    }
+
+    .main-wrapper {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .content {
+        padding: 1rem;
+        margin: 0 auto;
+    }
+
+    .drawing{
+        display: flex;
+        flex-direction: column;
+        opacity: 0.8;
+    }
+
+    .violet-main {
+        width: 18rem;
+    }
+
+    .violet-small{
+        width: 5rem;
+        opacity: 0.8;
+    }
+
+    /* about display CSS -------------------------------------------------------------- */
+    
+    #about {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .about-content {
+        margin: 1rem auto;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: space-evenly;
+        justify-content: space-evenly;
+    }
+    
+    .bio-pic {
+        width: 16rem;
+        margin: 1rem;
+    }
+
+    .about-heading {
+        text-align: left;
+    }
+
+    .about-text {
+        width: 22rem;
+        margin: 1rem;
+    }
+
+    .bio {
+        font-size: 14pt;
+        text-align: left;
+    }
+
+    /* project display CSS -------------------------------------------------------------- */
+
+    .project {
+        width: 90%;
+    }
+
+    .project-image {
+        width: 85%;
+    }
+
+    .project-description {
+        font-size: 14pt;
+    }
+
+
+    /* skills page -------------------------------------------------------> */
+
+    .skills-box {
+        width: 80%;
+        height: auto;
+        padding-top: 1rem;
+    }
+
+    .skills-icons {
+        width: 90%;
+        font-size: 32pt;
+        padding: 1rem;
+        margin: 0 auto; 
+    }
+
+    .skill-icon {
+        margin: 1rem;
+    }
+
+    .soft-skills {
+        font-size: 14pt;
+    }
+
+    /* contact page ------------------------------------------------------------> */
+    .contact-text{
+        margin: 1rem 2rem;
+        font-size: 14pt;
+    }
+
+    .bio-links{
+        justify-content: center;
+        align-content: center;
+    }
+
+    .contact-icon {
+        margin: 1rem;
+    }
+
+}
+
+/* DESKTOP ==================================================================== */
+@media (min-width: 1025px) {
+
+    html {
+        overflow: scroll;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        overflow: scroll;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        list-style: none;
+        position: absolute;
+        right: 0;
+        font-family: 'Amaranth', sans-serif;
+        color: rgb(23, 23, 23);
+    }
+
+    .menu-button {
+        display: inline;
+        padding: 0.5rem 1rem;
+        margin-right: 1rem;   
+    }
+
+    .menu-button:hover {
+        background-color: rgb(249, 215, 160);
+        cursor: pointer;
+    }
+
+    .focus{
+        background-color: rgb(249, 215, 160)
+    }
+
+    .content {
+        width: 80%;
+        padding: 1rem 0rem;
+        margin: 1rem auto;
+        height: auto;
+    }
+
+    .violet-main {
+        width: 22rem;
+    }
+
+    .b-r-corner {
+        display: block;
+        visibility: hidden;
+        width: 13rem;
+        height: 2rem;
+        align-self: flex-end;
+        margin: 1rem 2rem 12rem 1rem;
+        text-align: center;
+    }
+
+    .violet-small{
+        width: 5rem;
+        opacity: 0.8;
+    }
+
+     /* about display CSS -------------------------------------------------------------- */
+    .about-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .bio-pic {
+        width: 22rem;
+        margin: 2rem;
+    }
+
+    .about-heading {
+        text-align: left;
+        margin: 2rem 1rem;
+    }
+
+    .about-text {
+        width: 22rem;
+        margin: 2rem;
+}
+
+    .bio {
+        font-size: 14pt;
+        width: 22rem;
+        margin: 1rem;
+        text-align: left;
+    }
+
+    /* project display CSS -------------------------------------------------------------- */
+
+    .project {
+        margin: 0 auto 1rem;
+        align-items: flex-start;
+        width: 50rem;
+    }
+
+    .title {
+        font-size: 18pt;
+    }
+
+    .project-image {
+        width: 100%;
+    }
+
+    .project-stats {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 1rem auto;
+
+    }
+
+    .link-box {
+        font-size: 14pt;
+        margin: 1rem 1rem;
+    }
+
+    .link-box a:hover{
+        background-color: rgb(243, 160, 72);
+    }
+
+    .project-info {
+        padding: 1rem 1rem;
+    }
+
+    .project-description {
+        text-align: left;
+        width: 100%;
+        font-size: 14rem;
+    }
+
+
+    /* skills page -------------------------------------------------------> */
+    .skills-box{
+        padding-top: 2rem;
+        width: 44rem;
+    }
+    
+    .skills-icons {
+        width: 40rem;
+        font-size: 40pt;
+        padding: 1rem;
+    }
+
+    .skill-icon {
+        margin: 1rem;
+    }
+
+    .skill-icon:hover{
+        color: rgb(243, 160, 72)
+    }
+
+    .soft-skills {
+        font-size: 14pt;
+        width:  40rem;
+    }
+
+    /* contact page ------------------------------------------------------------> */
+    
+    .contact-box {
+        width: 44rem;
+    }
+
+    .contact-text{
+        width: 100%;
+        font-size: 14pt;
+        margin-top: -1rem;
+    }
+
+    .bio-links{
+        justify-content: center;
+        align-content: center;
+    }
+
+    .bio-links a:hover {
+        color: rgb(159, 155, 238)
+    }
+
+    .contact-icon {
+        margin: 1rem;
+    }
+
+}

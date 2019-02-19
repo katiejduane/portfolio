@@ -74,6 +74,8 @@ window.onload = function (e) {
             let image1 = document.createElement('img');
             image1.classList.add('project-image');
             image1.src = proj.img;
+            let projectStats = document.createElement('div');
+            projectStats.classList.add('project-stats');
             let links = document.createElement('div');
             links.classList.add('link-box');
             links.insertAdjacentHTML('afterbegin', proj.github);
@@ -85,13 +87,14 @@ window.onload = function (e) {
             projectInfo.insertAdjacentHTML('beforeend', proj.contributions);
             projectContainer.appendChild(projectTitle);
             projectContainer.appendChild(image1);
+            projectContainer.appendChild(projectStats)
             projectContainer.appendChild(links);
             projectContainer.appendChild(projectInfo);
             space.appendChild(projectContainer);
         })
-        setTimeout(() => {
-            mainContent.appendChild(space);
-        }, 100)
+        // setTimeout(() => {
+        //     mainContent.appendChild(space);
+        // }, 100)
 
     })
 

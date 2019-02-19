@@ -1,54 +1,206 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Katie J. Duane</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Arvo|Crimson+Text|Enriqueta|Josefin+Sans|Muli|Rokkitt|Alegreya+Sans|Amaranth|B612|Cherry+Swash|Nova+Oval|Quattrocento+Sans|Rosario|Sirin+Stencil" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Katie J. Duane 🤓</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Crimson+Text|Enriqueta|Josefin+Sans|Muli|Rokkitt|Alegreya+Sans|Amaranth|B612|Cherry+Swash|Nova+Oval|Quattrocento+Sans|Rosario|Sirin+Stencil"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
         integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet"
         href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
 </head>
-<body>
+
+<body class="body">
     <nav>
         <div class="mobile-menu"><i class="fas fa-bars"></i></div>
         <ul class="menu">
-            <li class="menu-button" id="home-button">home</li>
-            <li class="menu-button" id="projects-button">projects</li>
-            <li class="menu-button" id="skills-button">skills</li>
-            <li class="menu-button" id="about-button">about</li>
-            <li class="menu-button" id="contact-button">contact</li>
+            <a href="#about"><li class="menu-button" id="about-button">
+                About</li></a>
+            <a href="#projects"><li class="menu-button" id="projects-button">
+                Projects</li></a>
+            <a href="#skills"><li class="menu-button" id="skills-button">
+                Skills</li></a>
+            <a href="#contact"><li class="menu-button" id="contact-button">
+                Contact</li></a>
         </ul>
     </nav>
-
     <div class="main-wrapper">
-        <div class="side-bar">
-            <span class="side-bar-title">Welcome!</span>
-            <p class="side-bar-desc">"So plant your own gardens and decorate your own soul, instead of waiting for someone to bring you flowers." --Jorge Luis Borges</p>
-        </div>
+        <div class="content">
 
-    <div class="viewer homepage-viewer">
-        <div class="content homepage-content">
-            <div class="drawing">
-                <img class="violet-main" alt="violet" src="images/other/violet-home.png"/>
+            <section class="landing">
+                <div class="drawing">
+                    <img class="violet-main" alt="violet" src="images/other/violet-home.png" />
+                </div>
+            </section>
+
+            <hr class="divider divider-purple">
+            <section id="about" class="about">
+                <div class="about-content">
+                    <img class="bio-pic" src="images/other/bio-pic-2.jpg" alt="portrait">
+                    <div class="about-text">
+                        <h3 class="about-heading">Hi! I'm Katie Duane</h1>
+                        <p class="bio">
+                            A web developer, writer, and former teacher living in Atlanta, Georgia. Discovering web development 
+                            was very much a happy accident. About a year after my decision to leave the classroom, I took a free 
+                            JavaScript workshop on a whim. The syntax felt poetic to me, and because it is simply another means of making
+                            something out of nothing, I quickly became enamored by it.</p>
+                        <p class="bio">I see writing code as similar to writing a good 
+                            poem: it should be clear, efficient, beautiful, and accessible. While I'm still learning, this is always what I strive for.</p>
+                        <p class="bio">
+                            When I'm not writing code, it's very likely that I'm writing, painting, reading (usually 18 books at once), or
+                            spending time outside. I'm also a registered yoga teacher and love to travel.</p>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="divider divider-purple">
+            <section id="projects" class="projects">
+                <h2 class="section-header">Projects</h2>
+                <div class="projects-list">
+                    
+                </div>
+            </section>
+
+            <hr class="divider divider-purple">
+            <section id="skills" class="skills">
+                <h3 class="section-header">Skills</h3>
+                <div class="skills-box">
+                    <h4 class="subtitle">Front-End</h4>
+                    <div class="skills-icons">
+                        <div class="skill-icon">
+                            <i class="devicon-javascript-plain"></i>
+                            <p class="skill-name">JavaScript</p>
+                        </div>
+                        <div class="skill-icon">
+                            <i class="devicon-react-original"></i>
+                            <p class="skill-name">React.js</p>
+                        </div>
+                        <div class="skill-icon">
+                            <i class="devicon-html5-plain"></i>
+                            <p class="skill-name">HTML</p>
+                        </div>
+                        <div class="skill-icon">
+                            <i class="devicon-css3-plain"></i>
+                            <p class="skill-name">CSS</p>
+                        </div>
+                        <div class="skill-icon">
+                            <i class="devicon-sass-original"></i>
+                            <p class="skill-name">Sass</p>
+                        </div>
+                        <div class="skill-icon">
+                            <i class="devicon-bootstrap-plain"></i>
+                            <p class="skill-name">Bootstrap</p>
+                        </div>
+                        <div class="skill-icon">
+                            <i class="devicon-jquery-plain"></i>
+                            <p class="skill-name">jQuery</p>
+                        </div>
+                    </div>
+                    <h4 class="subtitle">Back-End</h4>
+                    <div class="skills-icons">
+                        <div class="skill-icon">
+                            <i class="devicon-nodejs-plain"></i>
+                            <p class="skill-name">Node.js</p>
+                        </div>
+                        <div class="skill-icon">
+                            <i class="devicon-express-original"></i>
+                            <p class="skill-name">Express</p>
+                        </div>
+                        <div class="skill-icon">
+                            <i class="devicon-python-plain"></i>
+                            <p class="skill-name">Python</p>
+                        </div>
+                        <div class="skill-icon">
+                            <i class="devicon-mysql-plain"></i>
+                            <p class="skill-name">mySQL</p>
+                        </div>
+                    </div>
+                    <h4 class="subtitle">Everything else!</h4>
+                    <div class="skills-icons">
+                        <div class="skill-icon">
+                            <i class="devicon-git-plain"></i>
+                            <p class="skill-name">Git</p>
+                        </div>
+                        <div class="skill-icon">
+                            <i class="devicon-amazonwebservices-original"></i>
+                            <p class="skill-name">AWS</p>
+                        </div>
+                        <div class="skill-icon">
+                            <i class="devicon-apache-plain"></i>
+                            <p class="skill-name">Apache</p>
+                        </div>
+                        <div class="skill-icon">
+                            <i class="devicon-photoshop-plain"></i>
+                            <p class="skill-name">PhotoShop</p>
+                        </div>
+                        <div class="skill-icon">
+                            <i class="devicon-illustrator-plain"></i>
+                            <p class="skill-name">Illustrator</p>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="sub-header">Other Professional Skills</h3>
+                <div class="soft-skills">
+                    <p>Time management, organization, communication, debugging,
+                    creative problem-solving, project-planning, customer service, writing, proof-reading,
+                    layout and visual design. Teaching and instructional design. Spanish.</p>
+                </div>
+            </section>
+
+            <hr class="divider divider-purple">
+            <section id="contact" class="contact">
+                <h2 class="section-header">Get in touch...</h2>
+                <div class="contact-box">
+                    <div class="contact-links">
+                        <div class="contact-icon">
+                            <a href="https://github.com/katiejduane"><i class="devicon-github-plain"></i></a>
+                            <p class="contact-icon-text">GitHub</p>
+                        </div>
+                        <div class="contact-icon">
+                            <a href="https://www.linkedin.com/in/kathrynjduane/"><i class="fab fa-linkedin"></i></a>
+                            <p class="contact-icon-text">LinkedIn</p>
+                        </div>
+                        <div class="contact-icon">
+                            <a href="mailto: katiejduane@gmail.com"><i class="far fa-envelope"></i></a>
+                            <p class="contact-icon-text">Email</p>
+                        </div>
+                        <div class="contact-icon">
+                            <a href="./images/other/katiejduane2019-p.pdf" target="blank" download><i class="far fa-file"></i></a>
+                            <p class="contact-icon-text">Resume</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-text">
+                        <p>If you'd like to contact me or learn more about my professional experiences, please click on any of the links
+                        above.</p>
+                        <p>A quick aside: I chose to draw a violet for the homepage because they grow all over the world, in varying
+                            climates and locales. They are symbolic of spring, humility, candor, and intuition.</p>
+                        <p>I'm also a practicing writer and artist. If you're interested in reading some of my work, you can find two
+                            recently published pieces: a poem about time, here: <a href="./creative/Jasper.pdf" target="blank">Jasper</a>, 
+                            and an essay about a star cluster and mythology, here: <a href="https://www.themanifeststation.net/2018/06/04/m45/"
+                            target="blank">M45</a>. I also wrote a <a href="http://www.eatthispoem.com/city-guides/rochester" target="blank">literary city guide</a> for
+                            Rochester, NY. Of course, I have several more projects in the works!
+                    </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+        <footer class="footer">
+            <div class="footer-box">
+                <img class="violet-small" alt="violet" src="images/other/violet1.png" />
+                <h4 class="thankyou">Thank you for visiting!</h4>
             </div>
-        </div>
-    </div>
-
-        <div class="b-r-corner">
-            <img class="violet-small" alt="violet" src="images/other/violet1.png"/>
-        </div>
-    </div>
-
-    <footer>
-    </footer>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="objects.js"></script>
-<script src="main.js"></script>
+        </footer>
+    
+<script src="projects.js"></script>
+<script src="scripts.js"></script>
 
 </body>
+
 </html>
