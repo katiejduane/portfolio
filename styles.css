@@ -1,18 +1,15 @@
 html {
     height: 100%;
     background-color: rgb(140, 140, 238);
-    /* overflow: scroll; */
     scroll-behavior: smooth;
     /* ^^ do the JS function ASAP for more specific scroll!!! ^^ */
 }
 
 body {
     margin: 0;
-    /* background: linear-gradient(to bottom,rgb(126, 190, 238)5%, rgb(184, 184, 184)); */
     background-color: papayawhip;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    /* overflow: scroll; */
 }
 
 nav {
@@ -22,6 +19,7 @@ nav {
     position: fixed;
     top: 0;   
     z-index: 10;
+    box-shadow: 0 1px 10px rgb(130, 130, 130);
 }
 
 .menu {
@@ -128,7 +126,6 @@ footer {
     width: 100%;
     text-align: center;
     background: linear-gradient(to bottom,papayawhip,rgb(140, 140, 238));
-    opacity: 0.8;
 }
 
 .thankyou {
@@ -169,7 +166,6 @@ footer {
     text-align: center;
     font-family: 'Alegreya Sans', sans-serif;
 }
-
 
 /* project display CSS -------------------------------------------------------------- */
 .projects-box {
@@ -553,12 +549,7 @@ footer {
 @media (min-width: 1025px) {
 
     html {
-        /* overflow: scroll; */
         scroll-behavior: smooth;
-    }
-
-    body {
-        /* overflow: scroll; */
     }
 
     .mobile-menu {
@@ -597,7 +588,7 @@ footer {
     }
 
     .violet-main {
-        width: 22rem;
+        width: 20rem;
     }
 
     .b-r-corner {
@@ -692,7 +683,6 @@ footer {
         margin: 1rem;
     }
 
-
     /* skills page -------------------------------------------------------> */
     .skills-box{
         padding-top: 2rem;
@@ -718,8 +708,7 @@ footer {
         width:  40rem;
     }
 
-    /* contact page ------------------------------------------------------------> */
-    
+    /* contact page ------------------------------------------------------------> */ 
     .contact-box {
         width: 44rem;
     }

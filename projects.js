@@ -20,7 +20,7 @@ const projects = [
         <i class="devicon-jquery-plain"></i>`,
         github: `<a href="https://github.com/katiejduane/Pithos--FrontEndProject" target="blank">GitHub</a>`,
         liveSite: `<a href="https://katiejduane.com/pithos" target="blank">Live Site</a>`,
-        description: `<p class="description">'Pithos' is the Greek word for a container or vessel. We were interested in ecosystems, which are a type of container. So is a website. We wanted to connect our ecosystem to the state of Georgia (home), and also the larger realms of history and mythology; which are their own kinds containers. Pithos!</p>`,
+        description: `<p class="description">'Pithos' is the Greek word for a container or vessel. We were interested in ecosystems, and wanted to connect our ecosystem to the state of Georgia (home), and also the larger realms of history and mythology; which are their own kinds containers (Pithos!). The result is an interactive, aesthetic, and narrative experience for the user.</p>`,
         contributions: `<p>Contributions: Concept, CSS for mobile and tablet, JavaScript for page functionality and interactivity as well as map positioning.</p>`,
 
     },
