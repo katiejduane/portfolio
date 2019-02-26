@@ -180,7 +180,7 @@ footer {
 
 .about-text {
     width: 90%;
-    font-size: 16pt;
+    font-size: 14pt;
 }
 
 .bio {
@@ -662,11 +662,6 @@ footer {
         justify-content: center;
         margin: 1rem auto 0;
     }
-
-    /* .pointer {
-        font-family: 'Alegreya Sans', sans-serif;
-        font-size: 8pt;
-    } */
 
     .link-box {
         font-size: 14pt;
