@@ -22,11 +22,25 @@ nav {
     box-shadow: 0 1px 10px rgb(130, 130, 130);
 }
 
+.backdrop{
+    display: none;
+    position: fixed;
+    top: 3.25rem;
+    width: 100vw;
+    height: 100vh;
+    background-color:rgb(140, 140, 238);
+    opacity: 0.6;
+}
+
 .menu {
     display: none;
 }
 
-.mobile-menu {
+.menu a {
+    text-decoration: none;
+}
+
+.mobile-icon {
     display: block;
     font-size: 18pt;
     list-style: none;
@@ -35,33 +49,40 @@ nav {
     margin: 1rem;
 }
 
-.mobile-menu i {
+.mobile-icon i {
     padding: 0.25rem 05.rem;
 }
 
-.menu a {
-    text-decoration: none;
+.mobile-menu {
+    display: none;
+    position: fixed;
+    padding: 1rem 1rem 0.5rem 1rem;
+    top: 3rem;
+    right: 1rem;
+    list-style: none;
+    z-index: 15;
+    background-color: rgb(140, 140, 238);
 }
 
-.menu-button {
+.mobile-menu-button {
+    /* display: none; */
     font-family: 'Amaranth', sans-serif;
-    display: block;
+    font-size: 14pt;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.75rem;  
     text-align: center;
-    padding: 0.5rem 1rem;
-    margin-right: 1rem;   
     color: rgb(40, 40, 40);
-    background-color: rgb(243, 160, 72);
+    background-color: rgb(243, 160, 72); 
+}
+
+.mobile-menu a {
     text-decoration: none;
 }
 
-.menu-button:hover {
-    background-color: papayawhip;
-    cursor: pointer;
+.mobile-icon i {
+    padding: 0.25rem 05.rem;
 }
 
-.focus{
-    background-color: papayawhip;
-}
 
 .main-wrapper {
     width: 100%;
@@ -214,6 +235,7 @@ footer {
     padding: 0.5rem;
     font-size: 14pt;
     color: rgb(23, 23, 23);
+    position: relative;
 }
 
 .project-info span {
@@ -229,7 +251,7 @@ footer {
 }
 
 .project-info i:hover {
-    color: rgb(140, 140, 238);;
+    color: rgb(140, 140, 238);
 }
 
 .description {
@@ -249,6 +271,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 0;
 }
 
 .skills-icons {
@@ -352,10 +375,10 @@ footer {
     margin-top: 0.5rem;
 }
 
-/* TABLET Portrait ============================================================ */
-@media (min-width: 640px) and (max-width: 1024px) {
+/* MENU CSS FOR ALL SCREENS LARGER THAN PHONE! */
+@media (min-width: 640px){
 
-    nav {
+     nav {
         background-color: rgb(140, 140, 238);
         width: 100%;
         height: 3.25rem;
@@ -364,8 +387,23 @@ footer {
         z-index: 10;
     }
 
-    .mobile-menu {
+    .mobile-icon {
         display: none;
+    }
+
+    .mobile-menu, .mobile-menu-buttons {
+        display: none;
+    }
+
+    .menu-button {
+        font-family: 'Amaranth', sans-serif;
+        display: inline;
+        padding: 0.5rem 1rem;
+        margin-right: 1rem;  
+        text-align: center;
+        color: rgb(40, 40, 40);
+        background-color: rgb(243, 160, 72);
+        text-decoration: none;
     }
 
     .menu {
@@ -377,11 +415,18 @@ footer {
         color: rgb(23, 23, 23);
     }
 
-    .menu-button {
-        display: inline;
-        padding: 0.5rem 1rem;
-        margin-right: 1rem;   
+    .menu-button:hover {
+        background-color: rgb(249, 215, 160);
+        cursor: pointer;
     }
+
+    .focus{
+        background-color: rgb(249, 215, 160)
+    }
+}
+
+/* TABLET Portrait ============================================================ */
+@media (min-width: 640px) and (max-width: 1024px) {
 
     .content {
         padding: 0.5rem 0rem;
@@ -421,19 +466,6 @@ footer {
 
 /* TABLET Landscape =========================================================== */
 @media (max-width: 1024px) and (min-width: 960px){
-
-    .mobile-menu {
-        display: none;
-    }
-
-    .menu {
-        display: block;
-        list-style: none;
-        position: absolute;
-        right: 0;
-        font-family: 'Amaranth', sans-serif;
-        color: rgb(23, 23, 23);
-    }
 
     .content {
         padding: 1rem;
@@ -542,7 +574,6 @@ footer {
     .contact-icon {
         margin: 1rem;
     }
-
 }
 
 /* DESKTOP ==================================================================== */
@@ -550,34 +581,6 @@ footer {
 
     html {
         scroll-behavior: smooth;
-    }
-
-    .mobile-menu {
-        display: none;
-    }
-
-    .menu {
-        display: block;
-        list-style: none;
-        position: absolute;
-        right: 0;
-        font-family: 'Amaranth', sans-serif;
-        color: rgb(23, 23, 23);
-    }
-
-    .menu-button {
-        display: inline;
-        padding: 0.5rem 1rem;
-        margin-right: 1rem;   
-    }
-
-    .menu-button:hover {
-        background-color: rgb(249, 215, 160);
-        cursor: pointer;
-    }
-
-    .focus{
-        background-color: rgb(249, 215, 160)
     }
 
     .content {
@@ -660,6 +663,11 @@ footer {
         margin: 1rem auto 0;
     }
 
+    /* .pointer {
+        font-family: 'Alegreya Sans', sans-serif;
+        font-size: 8pt;
+    } */
+
     .link-box {
         font-size: 14pt;
         margin: 1rem 1rem;
@@ -671,6 +679,51 @@ footer {
 
     .project-info {
         padding: 1rem 1rem;
+    }
+
+    .project-info i:hover::after {
+        display: block;
+        position: absolute;
+        font-family: 'Alegreya Sans', sans-serif;
+        font-size: 12pt;
+        padding: 0.5rem;
+        left: 45%;
+    }
+
+    #node-icon:hover::after{
+        content:"Node.js";
+    }
+
+    #express-icon:hover::after{
+        content:"Express";
+    }
+    
+    #mysql-icon:hover::after{
+        content:"MySQL";
+    }
+
+    #html-icon:hover::after{
+        content:"HTML5";
+    }
+
+    #css-icon:hover::after{
+        content:"CSS3";
+    }
+
+    #js-icon:hover::after{
+        content:"JavaScript";
+    }
+
+    #jquery-icon:hover::after{
+        content:"jQuery";
+    }
+
+    #python-icon:hover::after{
+        content:"Python";
+    }
+
+    #react-icon:hover::after{
+        content:"React";
     }
 
     .project-description {
