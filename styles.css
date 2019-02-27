@@ -21,15 +21,15 @@ nav {
     z-index: 10;
     box-shadow: 0 1px 10px rgb(130, 130, 130);
 }
+.return {
+    position: absolute;
+    left: 0;
+    margin: 1rem;
+    color:rgb(243, 160, 72);
+}
 
-.backdrop{
-    display: none;
-    position: fixed;
-    top: 3.25rem;
-    width: 100vw;
-    height: 100vh;
-    background-color:rgb(140, 140, 238);
-    opacity: 0.6;
+.return:hover{
+    color: papayawhip;
 }
 
 .menu {
@@ -106,7 +106,7 @@ nav {
     margin-top: 2rem;
 }
 
-.landing {
+#landing {
     width: 100%;
     height: 100vh;
     display: flex;

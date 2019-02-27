@@ -45,6 +45,15 @@ buttons.forEach((button) => {
     })
 })
 
+// remove mobile menu/buttons if screen is resized
+window.addEventListener('resize', () => {
+    if (mobileMenu.style.display == 'block') {
+        mobileMenu.style.display = 'none';
+        
+    }
+});
+
+// scroll-TO functionality so it lands just above section header
 // const list = document.getElementsByClassName('menu-list')[0];
 
 // list.addEventListener('click', e => {
