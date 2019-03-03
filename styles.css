@@ -734,12 +734,12 @@ footer {
     /* skills page -------------------------------------------------------> */
     .skills-box{
         padding-top: 2rem;
-        width: 42rem;
+        width: 40rem;
     }
     
     .skills-icons {
         width: 40rem;
-        font-size: 40pt;
+        font-size: 36pt;
         padding: 1rem;
     }
 
