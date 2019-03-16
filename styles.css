@@ -360,6 +360,18 @@ footer {
     color:  rgb(140, 140, 238);
 }
 
+.contact-links a:hover {
+    color:  rgb(243, 160, 72);
+}
+
+.contact-text a {
+    text-decoration: none;
+}
+
+.contact-text a:hover{
+    text-decoration: underline;
+}
+
 .contact-icon {
     margin: 5px;
     display: flex;
@@ -697,6 +709,10 @@ footer {
         content:"MySQL";
     }
 
+    #postgres-icon:hover::after{
+        content:"MySQL";
+    }
+
     #html-icon:hover::after{
         content:"HTML5";
     }
@@ -770,10 +786,6 @@ footer {
     .bio-links{
         justify-content: center;
         align-content: center;
-    }
-
-    .bio-links a:hover {
-        color: rgb(159, 155, 238)
     }
 
     .contact-icon {
