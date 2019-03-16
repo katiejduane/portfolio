@@ -710,7 +710,7 @@ footer {
     }
 
     #postgres-icon:hover::after{
-        content:"MySQL";
+        content:"PostgreSQL";
     }
 
     #html-icon:hover::after{
