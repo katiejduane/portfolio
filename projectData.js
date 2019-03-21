@@ -42,7 +42,7 @@ const projects = [
         img: `images/adulting/4forest.png`, 
         tech: `<span>Made with </span><i class="devicon-python-plain" id="python-icon"></i>`,
         github:`<a href="https://github.com/katiejduane/adultING" target="blank">GitHub</a>`,
-        liveSite: `<a href="https:/www./katiejduane.com/adulting" target="blank">Live Demo</a>`,
+        liveSite: `<a href="https://www.katiejduane.com/adulting" target="blank">Live Demo</a>`,
         description: `<p class="description">Since I'm not much of a gamer, I wanted to create a game that instead resembled life; how the choices we make, no matter how 'right' or 'wrong' they seem, usually have both positive and negative consequences we must contend with.</p>`,
         contributions: `<p>Contributions: I created all the interfaces with Tiled and Adobe Photoshop, and wrote Python for game play using Pygame.</p>`
     }
