@@ -12,6 +12,7 @@ const aboutButton = document.querySelector('#about-button')
 const contactButton = document.querySelector('#contact-button')
 let buttons = Array.from(document.querySelectorAll('.menu-button'))
 let mobileButtonsArray = Array.from(document.querySelectorAll('.mobile-menu-button'))
+const upArrow = document.querySelector('.return')
 
 
 // UPDATED MOBILE MENU, JS looks ok but is NOT at all styled yet
@@ -52,6 +53,11 @@ window.addEventListener('resize', () => {
         
     }
 });
+
+
+upArrow.addEventListener('click', () => {
+    changeButtonColor(buttons)
+})
 
 // scroll-TO functionality so it lands just above section header
 // const list = document.getElementsByClassName('menu-list')[0];
