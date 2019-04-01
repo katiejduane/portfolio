@@ -19,7 +19,6 @@ nav {
     position: fixed;
     top: 0;   
     z-index: 10;
-    box-shadow: 0 1px 10px rgb(130, 130, 130);
 }
 .return {
     position: absolute;
@@ -100,7 +99,6 @@ nav {
     background-color:rgb(140, 140, 238);
     width: 80%;
     height: 2px;
-    box-shadow: 0px;
     outline: none;
     margin-bottom: 2rem;
     margin-top: 2rem;
@@ -422,6 +420,7 @@ footer {
         display: block;
         list-style: none;
         position: absolute;
+        top: 1px;
         right: 0;
         font-family: 'Amaranth', sans-serif;
         color: rgb(23, 23, 23);

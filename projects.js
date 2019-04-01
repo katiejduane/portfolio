@@ -14,6 +14,7 @@ var projectLoad = new Promise((resolve, reject)=> {
         let image = document.createElement('img');
         image.classList.add('project-image');
         image.src = project.img;
+        image.alt = project.alt;
         let projectStats = document.createElement('div');
         projectStats.classList.add('project-stats');
         let links = document.createElement('div');

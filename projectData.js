@@ -3,6 +3,7 @@ const projects = [
     {
         title: 'Sift',
         img: `images/sift/sift.png`,
+        alt: `sift`,
         tech: `<span>Made with </span><i class="devicon-react-original" id="react-icon"></i><i class="devicon-nodejs-plain" id="node-icon"></i> <i class="devicon-express-original" id="express-icon"></i>
         <i class="devicon-postgresql-plain" id="postgres-icon"></i><i class="devicon-html5-plain" id="html-icon"></i> <i class="devicon-css3-plain" id="css-icon"></i> 
         <i class="devicon-javascript-plain" id="js-icon">`,
@@ -15,6 +16,7 @@ const projects = [
     {
         title: 'emOceans',
         img: `images/emOceans/newmooddesktop2.png`,
+        alt: `emoceans`,
         tech: `<span>Made with </span><i class="devicon-nodejs-plain" id="node-icon"></i> <i class="devicon-express-original" id="express-icon"></i>
         <i class="devicon-mysql-plain" id="mysql-icon"></i> <i class="devicon-html5-plain" id="html-icon"></i> <i class="devicon-css3-plain" id="css-icon"></i> 
         <i class="devicon-javascript-plain" id="js-icon">`,
@@ -27,6 +29,7 @@ const projects = [
     {
         title: 'Pithos',
         img: `images/pithos/desktopgradient2.png`,
+        alt: `pithos`,
         tech: `<span>Made with </span><i class="devicon-html5-plain" id="html-icon"></i>
         <i class="devicon-css3-plain" id="css-icon"></i><i class="devicon-javascript-plain" id="js-icon"></i> 
         <i class="devicon-jquery-plain" id="jquery-icon"></i>`,
@@ -40,6 +43,7 @@ const projects = [
     {
         title: 'adultING',
         img: `images/adulting/4forest.png`, 
+        alt: `adulting`,
         tech: `<span>Made with </span><i class="devicon-python-plain" id="python-icon"></i>`,
         github:`<a href="https://github.com/katiejduane/adultING" target="blank">GitHub</a>`,
         liveSite: `<a href="https://www.katiejduane.com/adulting" target="blank">Live Demo</a>`,
