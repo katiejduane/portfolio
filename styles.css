@@ -272,6 +272,12 @@ footer {
     flex-direction: column;
     align-items: center;
     z-index: 0;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+.learning-now{
+    text-align: center;
+    padding: 2rem;
 }
 
 .skills-icons {
