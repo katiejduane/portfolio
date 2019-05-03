@@ -1,6 +1,17 @@
 const projects = [
 
     {
+        title: 'Narrative Code Project',
+        img: `images/narrative/screen-welcome.png`,
+        alt: `narrative code`,
+        tech: `<span>Made with </span><i class="devicon-html5-plain" id="html-icon"></i> <i class="devicon-css3-plain" id="css-icon"></i> <i class="devicon-javascript-plain" id="js-icon">`,
+        github: `<a href="https://github.com/katiejduane/narrative-code" target="blank">GitHub</a>`,
+        liveSite: `<a href="https://www.katiejduane.com/narrative-code" target="blank">Live Site</a>`,
+        description: `<p class="description">Narrative Code was a way for me to get more creative/innovative with programming. It gives the user three different ways to "generate" a poem. One using an API, one using recursion, and the other requiring user input to create a choice-based poem. The experience is meant to be thoughtful, playful, and aesthetically pleasing. </p>`,
+        contributions: `<p>Contributions: Concept, and all JS, CSS, and HTML. </p>`,
+    },
+
+    {
         title: 'Sift',
         img: `images/sift/sift.png`,
         alt: `sift`,
