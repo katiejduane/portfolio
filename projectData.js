@@ -1,7 +1,7 @@
 const projects = [
 
     {
-        title: 'Narrative Code Project',
+        title: 'Narrative Code',
         img: `images/narrative/screen-welcome.png`,
         alt: `narrative code`,
         tech: `<span>Made with </span><i class="devicon-html5-plain" id="html-icon"></i> <i class="devicon-css3-plain" id="css-icon"></i> <i class="devicon-javascript-plain" id="js-icon">`,

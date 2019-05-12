@@ -1,6 +1,6 @@
 html {
     height: 100%;
-    background-color: rgb(140, 140, 238);
+    background-color: rgb(191, 176, 240);
     scroll-behavior: smooth;
     /* ^^ do the JS function ASAP for more specific scroll!!! ^^ */
 }
@@ -13,20 +13,20 @@ body {
 }
 
 nav {
-    background-color: rgb(140, 140, 238);
+    background-color: rgb(191, 176, 240);
     width: 100%;
-    height: 3.25rem;
+    height: 3rem;
     position: fixed;
     top: 0;   
     z-index: 10;
-    box-shadow: 0px 2px 6px rgba(133, 132, 132, 0.5);
+    /* box-shadow: 0px 2px 6px rgba(133, 132, 132, 0.5); */
 }
 
 .return {
     position: absolute;
     left: 0;
     margin: 1rem;
-    color:rgb(243, 160, 72);
+    color:rgb(55,55,55);
 }
 
 .return:hover{
@@ -62,18 +62,18 @@ nav {
     right: 1rem;
     list-style: none;
     z-index: 15;
-    background-color: rgb(140, 140, 238);
+    background-color: rgb(191, 176, 240);
 }
 
 .mobile-menu-button {
     /* display: none; */
     font-family: 'Amaranth', sans-serif;
-    font-size: 14pt;
+    font-size: 13pt;
     padding: 0.75rem 1rem;
     margin-bottom: 0.75rem;  
     text-align: center;
     color: rgb(40, 40, 40);
-    background-color: rgb(243, 160, 72); 
+    background-color: rgb(241, 173, 99); 
 }
 
 .mobile-menu a {
@@ -98,7 +98,7 @@ nav {
 }
 
 .divider-purple {
-    background-color:rgb(140, 140, 238);
+    background-color:rgb(191, 176, 240);
     width: 80%;
     height: 2px;
     outline: none;
@@ -146,7 +146,7 @@ nav {
 footer {
     width: 100%;
     text-align: center;
-    background: linear-gradient(to bottom,papayawhip,rgb(140, 140, 238));
+    background: linear-gradient(to bottom,papayawhip,rgb(191, 176, 240));
 }
 
 .thankyou {
@@ -180,7 +180,7 @@ footer {
 
 .about-text {
     width: 90%;
-    font-size: 14pt;
+    font-size: 13pt;
 }
 
 .bio {
@@ -206,7 +206,7 @@ footer {
 .title {
     font-family: 'Amaranth', sans-serif;
     font-size: 16pt;
-    color: rgb(23, 23, 23); 
+    color: rgb(55,55,55); 
     margin: 0.25rem 0;
 }
 
@@ -222,9 +222,9 @@ footer {
 }
 
 .link-box a {
-    background-color:  rgb(140, 140, 238);
+    background-color:  rgb(191, 176, 240);
     text-decoration: none;
-    color: rgb(23, 23, 23); 
+    color: rgb(55,55,55); 
     margin-right: 0.5rem;
     padding: 0.5rem 1rem;
 }
@@ -233,38 +233,39 @@ footer {
     text-align: center;
     font-family: 'Alegreya Sans', sans-serif;
     padding: 0.5rem;
-    font-size: 14pt;
-    color: rgb(23, 23, 23);
+    font-size: 13pt;
+    color: rgb(55,55,55);
     position: relative;
 }
 
 .project-info span {
-    font-size: 14pt;
+    font-size: 13pt;
     font-weight: bold;
 }
 
 .project-info i {
     padding-right: 0.25rem;
     font-size: 18pt;
-    color: rgb(243, 160, 72);
+    color: rgb(241, 173, 99); 
     vertical-align: middle;
+    transition: color 0.5s ease;
 }
 
 .project-info i:hover {
-    color: rgb(140, 140, 238);
+    color: rgb(191, 176, 240);
 }
 
 .description {
     margin: 1rem auto;
     width: 90%;
     font-family: 'Alegreya Sans', sans-serif;
-    font-size: 14pt;
+    font-size: 13pt;
     text-align: center;
 }
 
 /* skills page -------------------------------------------------------> */
 .skills-box {
-    border: 2px dashed rgb(243, 160, 72);
+    border: 2px dashed rgb(241, 173, 99);
     width: 85%;
     margin: 0 auto 2rem;
     padding: 0.5rem;
@@ -288,8 +289,7 @@ footer {
     flex-wrap: wrap;
     width: 90%;
     min-width: 200px;
-    color: rgb(140, 140, 238);
-    font-size: 28pt;
+    font-size: 26pt;
     padding: 0.5rem; 
     opacity: 0.8;
     margin: 0 auto;
@@ -301,10 +301,12 @@ footer {
     align-items: center;
     justify-content: center;
     margin: 0.5rem;
+    color: rgb(191, 176, 240);
+    transition: color 0.5s ease;
 }
 
 .skill-icon:hover{
-    color:  rgb(101, 101, 207);
+    color:  rgb(241, 173, 99);
 }
 
 .skill-icon p {
@@ -315,7 +317,7 @@ footer {
 .soft-skills {
     text-align: center;
     width: 90%;
-    font-size: 14pt;
+    font-size: 13pt;
     font-family: 'Alegreya Sans', sans-serif;
 }
 
@@ -326,9 +328,9 @@ footer {
 .subtitle {
     text-align: center;
     font-family:'Alegreya Sans', sans-serif;
-    font-size: 14pt;
+    font-size: 13pt;
     margin: 0.25rem 0rem 0.25rem 0rem;
-    color: rgb(23, 23, 23);
+    color: rgb(55,55,55);
 }
 
 /* contact page ------------------------------------------------------------> */
@@ -342,12 +344,12 @@ footer {
 }
 
 .contact-box a{
-    color: rgb(140, 140, 238);
+    color:rgb(191, 176, 240);
 }
 
 .contact-text{
     font-family: 'Alegreya Sans', sans-serif;
-    font-size: 14pt;
+    font-size: 13pt;
     text-align: center;
     margin: 1rem;
 }
@@ -363,11 +365,12 @@ footer {
 
 .contact-links a {
     text-decoration: none;
-    color:  rgb(140, 140, 238);
+    color: rgb(191, 176, 240);
+    transition: color 0.5s ease;
 }
 
 .contact-links a:hover {
-    color:  rgb(243, 160, 72);
+    color: rgb(241, 173, 99);
 }
 
 .contact-text a {
@@ -397,9 +400,8 @@ footer {
 @media (min-width: 640px){
 
      nav {
-        background-color: rgb(140, 140, 238);
         width: 100%;
-        height: 3.25rem;
+        height: 3rem;
         position: fixed;
         top: 0;   
         z-index: 10;
@@ -413,34 +415,37 @@ footer {
         display: none;
     }
 
-    .menu-button {
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 100%;
+        list-style: none;
+        margin: 0;
         font-family: 'Amaranth', sans-serif;
-        display: inline;
-        padding: 0.5rem 1rem;
-        margin-right: 1rem;  
-        text-align: center;
-        color: rgb(40, 40, 40);
-        background-color: rgb(243, 160, 72);
-        text-decoration: none;
+        color: rgb(55,55,55);
     }
 
-    .menu {
-        display: block;
-        list-style: none;
-        position: absolute;
-        top: 1px;
-        right: 0;
+    .menu-button {
+        height: 100%;
         font-family: 'Amaranth', sans-serif;
-        color: rgb(23, 23, 23);
+        padding: 0.95rem 1rem;
+        margin: 0;
+        box-sizing: border-box;
+        text-align: center;
+        color: rgb(55, 55, 55);
+        background-color: rgb(191, 176, 240);
+        text-decoration: none;
+        transition: background-color 0.75s ease;
     }
 
     .menu-button:hover {
-        background-color: rgb(249, 215, 160);
+        background-color: papayawhip;
         cursor: pointer;
     }
 
     .focus{
-        background-color: rgb(249, 215, 160)
+        background-color: papayawhip;
     }
 }
 
@@ -464,7 +469,7 @@ footer {
 
     .about-text {
         width: 70%;
-        font-size: 14pt;
+        
     }
 
     /* project display CSS -------------------------------------------------------------- */
@@ -537,7 +542,7 @@ footer {
     }
 
     .bio {
-        font-size: 14pt;
+        
         text-align: left;
     }
 
@@ -551,10 +556,6 @@ footer {
         width: 85%;
     }
 
-    .project-description {
-        font-size: 14pt;
-    }
-
 
     /* skills page -------------------------------------------------------> */
 
@@ -566,7 +567,7 @@ footer {
 
     .skills-icons {
         width: 90%;
-        font-size: 32pt;
+        font-size: 28pt;
         padding: 1rem;
         margin: 0 auto; 
     }
@@ -575,14 +576,11 @@ footer {
         margin: 1rem;
     }
 
-    .soft-skills {
-        font-size: 14pt;
-    }
 
     /* contact page ------------------------------------------------------------> */
     .contact-text{
         margin: 1rem 2rem;
-        font-size: 14pt;
+        
     }
 
     .bio-links{
@@ -652,7 +650,7 @@ footer {
 }
 
     .bio {
-        font-size: 14pt;
+        /* font-size: 13pt; */
         width: 22rem;
         margin: 1rem;
         text-align: left;
@@ -683,12 +681,15 @@ footer {
     }
 
     .link-box {
-        font-size: 14pt;
         margin: 1rem 1rem;
     }
 
+    .link-box a{
+        transition: background-color 0.5s ease;
+    }
+
     .link-box a:hover{
-        background-color: rgb(243, 160, 72);
+        background-color: rgb(241, 173, 99);
     }
 
     .project-info {
@@ -747,7 +748,7 @@ footer {
     .project-description {
         text-align: left;
         width: 100%;
-        font-size: 14rem;
+        /* font-size: 13rem; */
     }
 
     .description {
@@ -762,7 +763,7 @@ footer {
     
     .skills-icons {
         width: 40rem;
-        font-size: 36pt;
+        font-size: 32pt;
         padding: 1rem;
     }
 
@@ -770,12 +771,7 @@ footer {
         margin: 1rem;
     }
 
-    .skill-icon:hover{
-        color: rgb(243, 160, 72)
-    }
-
     .soft-skills {
-        font-size: 14pt;
         width:  40rem;
     }
 
@@ -786,7 +782,6 @@ footer {
 
     .contact-text{
         width: 100%;
-        font-size: 14pt;
         margin-top: -1rem;
     }
 
