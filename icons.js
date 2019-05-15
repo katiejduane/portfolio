@@ -47,6 +47,10 @@ const icons = [
                     <p class="skill-name">mySQL</p>
                 </div>
                 <div class="skill-icon">
+                    <i class="devicon-sequelize-plain"></i>
+                    <p class="skill-name">Sequelize</p>
+                </div>
+                <div class="skill-icon">
                     <i class="devicon-git-plain"></i>
                     <p class="skill-name">Git</p>
                 </div>
