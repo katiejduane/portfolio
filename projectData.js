@@ -26,7 +26,7 @@ const projects = [
 
     {
         title: 'emOceans',
-        img: `images/emOceans/newmooddesktop2.png`,
+        img: `images/emOceans/create1.png`,
         alt: `emoceans`,
         tech: `<span>Made with </span><i class="devicon-nodejs-plain" id="node-icon"></i> <i class="devicon-express-original" id="express-icon"></i>
         <i class="devicon-mysql-plain" id="mysql-icon"></i> <i class="devicon-html5-plain" id="html-icon"></i> <i class="devicon-css3-plain" id="css-icon"></i> 
