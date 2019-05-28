@@ -1,10 +1,13 @@
+#home-button{
+    font-weight: 600;
+}
+
 .py-content {
     margin: 0 auto;
     padding: 0.5rem 0rem;
     width: 90%;
     height: 100vh;
-    background-color: papayawhip;
-
+    background-color:rgb(238, 238, 238);
 }
 
 .video-wrapper {
@@ -21,7 +24,7 @@
 }
 
 p {
-    font-family: 'Amaranth', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-size: 16pt;
     color: rgb(23, 23, 23);
     text-align: center;
