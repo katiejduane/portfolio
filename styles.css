@@ -39,7 +39,18 @@ nav {
 
 .menu a {
     text-decoration: none;
+    color: rgb(238, 238, 238);
+    display: block;
+    padding: 0.95rem 1rem;
 }
+
+.mobile-menu a {
+    text-decoration: none;
+    color: rgb(238, 238, 238);
+    padding: 0.75rem 1rem;
+    display: block;
+}
+
 
 .mobile-icon {
     display: block;
@@ -47,7 +58,7 @@ nav {
     list-style: none;
     position: absolute;
     right: 0;
-    margin: 1rem;
+    margin: 0.75rem;
 }
 
 .mobile-icon i {
@@ -70,15 +81,12 @@ nav {
     font-family: 'Work Sans', sans-serif;
     font-weight: 500;
     font-size: 13pt;
-    padding: 0.75rem 1rem;
+    /* padding: 0.75rem 1rem; */
     margin-bottom: 0.75rem;  
     text-align: center;
     color: rgb(238, 238, 238);
     background-color: rgb(213, 80, 57);
-}
-
-.mobile-menu a {
-    text-decoration: none;
+    display: block;
 }
 
 .mobile-icon i {
@@ -433,7 +441,7 @@ footer {
         height: 100%;
         font-family: 'Work Sans', sans-serif;
         font-weight: 500;
-        padding: 0.95rem 1rem;
+        /* padding: 0.95rem 1rem; */
         margin: 0;
         box-sizing: border-box;
         text-align: center;
@@ -441,6 +449,7 @@ footer {
         background-color: rgb(131, 98, 199);
         text-decoration: none;
         transition: background-color 0.75s ease;
+        display: block;
     }
 
     .menu-button:hover {
