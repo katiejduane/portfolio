@@ -1,0 +1,1 @@
+re-do portfolio site, perhaps serverless, with video screenshots of projects that require a db. not sure if i will host on amazon still, or move to netlify or heroku. make portfolio w/ gatsby. this is a riveting text!
