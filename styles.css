@@ -1,811 +1,802 @@
 html {
-    height: 100%;
-    /* background-color: rgb(131, 98, 199); */
-    scroll-behavior: smooth;
-    /* ^^ do the JS function ASAP for more specific scroll!!! ^^ */
+  height: 100%;
+  /* background-color: rgb(131, 98, 199); */
+  scroll-behavior: smooth;
+  /* ^^ do the JS function ASAP for more specific scroll!!! ^^ */
 }
 
 body {
-    margin: 0;
-    background-color: rgb(238, 238, 238);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  margin: 0;
+  background-color: rgb(238, 238, 238);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 nav {
-    background-color: rgb(131, 98, 199);
-    width: 100%;
-    height: 3rem;
-    position: fixed;
-    top: 0;   
-    z-index: 10;
-    box-shadow: 0px 2px 6px rgba(133, 132, 132, 0.5);
+  background-color: rgb(131, 98, 199);
+  width: 100%;
+  height: 3rem;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0px 2px 6px rgba(133, 132, 132, 0.5);
 }
 
 .return {
-    position: absolute;
-    left: 0;
-    margin: 1rem;
-    color:rgb(238, 238, 238);
+  position: absolute;
+  left: 0;
+  margin: 1rem;
+  color: rgb(238, 238, 238);
 }
 
-.return:hover{
-    color: rgb(213, 80, 57);
+.return:hover {
+  color: rgb(213, 80, 57);
 }
 
 .menu {
-    display: none;
+  display: none;
 }
 
 .menu a {
-    text-decoration: none;
-    color: rgb(238, 238, 238);
-    display: block;
-    padding: 0.95rem 1rem;
+  text-decoration: none;
+  color: rgb(238, 238, 238);
+  display: block;
+  padding: 0.95rem 1rem;
 }
 
 .mobile-menu a {
-    text-decoration: none;
-    color: rgb(238, 238, 238);
-    padding: 0.75rem 1rem;
-    display: block;
+  text-decoration: none;
+  color: rgb(238, 238, 238);
+  padding: 0.75rem 1rem;
+  display: block;
 }
 
-
 .mobile-icon {
-    display: block;
-    font-size: 18pt;
-    list-style: none;
-    position: absolute;
-    right: 0;
-    margin: 0.75rem;
+  display: block;
+  font-size: 18pt;
+  list-style: none;
+  position: absolute;
+  right: 0;
+  margin: 0.75rem;
 }
 
 .mobile-icon i {
-    padding: 0.25rem 05.rem;
+  padding: 0.25rem 05rem;
 }
 
 .mobile-menu {
-    display: none;
-    position: fixed;
-    padding: 1rem 1rem 0.5rem 1rem;
-    top: 3rem;
-    right: 1rem;
-    list-style: none;
-    z-index: 15;
-    background-color: rgb(131, 98, 199);
+  display: none;
+  position: fixed;
+  padding: 1rem 1rem 0.5rem 1rem;
+  top: 3rem;
+  right: 1rem;
+  list-style: none;
+  z-index: 15;
+  background-color: rgb(131, 98, 199);
 }
 
 .mobile-menu-button {
-    /* display: none; */
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 500;
-    font-size: 13pt;
-    /* padding: 0.75rem 1rem; */
-    margin-bottom: 0.75rem;  
-    text-align: center;
-    color: rgb(238, 238, 238);
-    background-color: rgb(213, 80, 57);
-    display: block;
+  /* display: none; */
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-size: 13pt;
+  /* padding: 0.75rem 1rem; */
+  margin-bottom: 0.75rem;
+  text-align: center;
+  color: rgb(238, 238, 238);
+  background-color: rgb(213, 80, 57);
+  display: block;
 }
 
 .mobile-icon i {
-    padding: 0.25rem 05.rem;
+  padding: 0.25rem 05rem;
 }
 
-
 .main-wrapper {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .content {
-    padding: 0.5rem 0rem;
-    width: 90%;
-    height: auto;
-    margin: 0 auto;
+  padding: 0.5rem 0rem;
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
 }
 
 .divider-purple {
-    background-color:rgb(131, 98, 199);
-    width: 80%;
-    height: 2px;
-    outline: none;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+  background-color: rgb(131, 98, 199);
+  width: 80%;
+  height: 2px;
+  outline: none;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 #landing {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .drawing {
-    align-self: center;
-    margin: 1rem;
-    opacity: 0.9;
+  align-self: center;
+  margin: 1rem;
+  opacity: 0.9;
 }
 
 .violet-main {
-    padding: 1rem;
-    width: 15rem;
-    opacity: 0.9;
+  padding: 1rem;
+  width: 15rem;
+  opacity: 0.9;
 }
 
 .section-header {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 18pt;
-    text-align: center;
-    color: rgb(23, 23, 23); 
-    margin: 1rem 0;
+  font-family: "Work Sans", sans-serif;
+  font-size: 18pt;
+  text-align: center;
+  color: rgb(23, 23, 23);
+  margin: 1rem 0;
 }
 
 .sub-header {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 16pt;
-    text-align: center;
-    color: rgb(23, 23, 23); 
-    margin: 1rem 0;
+  font-family: "Work Sans", sans-serif;
+  font-size: 16pt;
+  text-align: center;
+  color: rgb(23, 23, 23);
+  margin: 1rem 0;
 }
 
 footer {
-    width: 100%;
-    text-align: center;
-    /* background: linear-gradient(to bottom,rgb(238, 238, 238),rgb(131, 98, 199)); */
+  width: 100%;
+  text-align: center;
+  /* background: linear-gradient(to bottom,rgb(238, 238, 238),rgb(131, 98, 199)); */
 }
 
 .thankyou {
-    margin: 0rem;
-    padding: 0.5rem;
-    font-family: 'Work Sans', sans-serif;
+  margin: 0rem;
+  padding: 0.5rem;
+  font-family: "Work Sans", sans-serif;
 }
 
 .violet-small {
-    width: 5rem;
-    opacity: 0.8;
+  width: 5rem;
+  opacity: 0.8;
 }
 
 /* about css ------------------------------------------------------------------------ */
 .about-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .bio-pic {
-    width: 60%;
-    border-radius: 50%;
+  width: 60%;
+  border-radius: 50%;
 }
 
 .about-heading {
-    text-align: center;
-    font-family: 'Work Sans', sans-serif;
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
 }
 
 .about-text {
-    width: 90%;
-    font-size: 13pt;
+  width: 90%;
+  font-size: 13pt;
 }
 
 .bio {
-    text-align: center;
-    font-family: 'Alegreya Sans', sans-serif;
+  text-align: center;
+  font-family: "Alegreya Sans", sans-serif;
 }
 
 /* project display CSS -------------------------------------------------------------- */
 .projects-box {
-    width: 100%;
+  width: 100%;
 }
 
 .project {
-    margin: 0 auto 1rem;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
+  margin: 0 auto 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .title {
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 500;
-    font-size: 16pt;
-    color: rgb(55,55,55); 
-    margin: 0.25rem 0;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16pt;
+  color: rgb(55, 55, 55);
+  margin: 0.25rem 0;
 }
 
 .project-image {
-    width: 100%;
-    margin: 0.5rem 0;
+  width: 100%;
+  margin: 0.5rem 0;
 }
 
 .link-box {
-    text-align: center;
-    font-family: 'Work Sans', sans-serif;
-    margin: 1rem;
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  margin: 1rem;
 }
 
 .link-box a {
-    background-color: rgb(131, 98, 199);
-    text-decoration: none;
-    color: rgb(238, 238,238); 
-    margin-right: 0.5rem;
-    padding: 0.5rem 1rem;
+  background-color: rgb(131, 98, 199);
+  text-decoration: none;
+  color: rgb(238, 238, 238);
+  margin-right: 0.5rem;
+  padding: 0.5rem 1rem;
 }
 
 .project-info {
-    text-align: center;
-    font-family: 'Alegreya Sans', sans-serif;
-    padding: 0.5rem;
-    font-size: 13pt;
-    color: rgb(55,55,55);
-    position: relative;
+  text-align: center;
+  font-family: "Alegreya Sans", sans-serif;
+  padding: 0.5rem;
+  font-size: 13pt;
+  color: rgb(55, 55, 55);
+  position: relative;
 }
 
 .project-info span {
-    font-size: 13pt;
-    font-weight: bold;
+  font-size: 13pt;
+  font-weight: bold;
 }
 
 .project-info i {
-    padding-right: 0.25rem;
-    font-size: 18pt;
-    color: rgb(213, 80, 57); 
-    vertical-align: middle;
-    transition: color 0.5s ease;
+  padding-right: 0.25rem;
+  font-size: 18pt;
+  color: rgb(213, 80, 57);
+  vertical-align: middle;
+  transition: color 0.5s ease;
 }
 
 .project-info i:hover {
-    color: rgb(131, 98, 199);
+  color: rgb(131, 98, 199);
 }
 
 .description {
-    margin: 1rem auto;
-    width: 90%;
-    font-family: 'Alegreya Sans', sans-serif;
-    font-size: 13pt;
-    text-align: center;
+  margin: 1rem auto;
+  width: 90%;
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 13pt;
+  text-align: center;
 }
 
 /* skills page -------------------------------------------------------> */
 .skills-box {
-    border: 2px dashed rgba(213, 80, 57, 0.76);
-    width: 85%;
-    margin: 0 auto 2rem;
-    padding: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 0;
-    font-family: 'Alegreya Sans', sans-serif;
+  border: 2px dashed rgba(213, 80, 57, 0.76);
+  width: 85%;
+  margin: 0 auto 2rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 0;
+  font-family: "Alegreya Sans", sans-serif;
 }
 
-.learning-now{
-    text-align: center;
-    padding: 0rem 2rem 0rem 2rem;
+.learning-now {
+  text-align: center;
+  padding: 0rem 2rem 0rem 2rem;
 }
 
 .skills-icons {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 90%;
-    min-width: 200px;
-    font-size: 26pt;
-    padding: 0.5rem; 
-    opacity: 0.8;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 90%;
+  min-width: 200px;
+  font-size: 26pt;
+  padding: 0.5rem;
+  opacity: 0.8;
+  margin: 0 auto;
 }
 
 .skill-icon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0.5rem;
-    color: rgb(131, 98, 199);
-    transition: color 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
+  color: rgb(131, 98, 199);
+  transition: color 0.5s ease;
 }
 
-.skill-icon:hover{
-    color:  rgb(213, 80, 57);
+.skill-icon:hover {
+  color: rgb(213, 80, 57);
 }
 
 .skill-icon p {
-    font-size: 11pt;
-    font-family: 'Alegreya Sans', sans-serif;
+  font-size: 11pt;
+  font-family: "Alegreya Sans", sans-serif;
 }
 
 .soft-skills {
-    text-align: center;
-    width: 90%;
-    font-size: 13pt;
-    font-family: 'Alegreya Sans', sans-serif;
+  text-align: center;
+  width: 90%;
+  font-size: 13pt;
+  font-family: "Alegreya Sans", sans-serif;
 }
 
 .soft-skills {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .subtitle {
-    text-align: center;
-    font-family:'Alegreya Sans', sans-serif;
-    font-size: 13pt;
-    margin: 0.25rem 0rem 0.25rem 0rem;
-    color: rgb(55,55,55);
+  text-align: center;
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 13pt;
+  margin: 0.25rem 0rem 0.25rem 0rem;
+  color: rgb(55, 55, 55);
 }
 
 /* contact page ------------------------------------------------------------> */
-.contact-box{
-    margin: 0 auto;
-    width: 95%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.contact-box {
+  margin: 0 auto;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.contact-box a{
-    color:rgb(131, 98, 199);
+.contact-box a {
+  color: rgb(131, 98, 199);
 }
 
-.contact-text{
-    font-family: 'Alegreya Sans', sans-serif;
-    font-size: 13pt;
-    text-align: center;
-    margin: 1rem;
+.contact-text {
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 13pt;
+  text-align: center;
+  margin: 1rem;
 }
 
-.contact-links{
-    display: flex;
-    align-items: center;
+.contact-links {
+  display: flex;
+  align-items: center;
 }
 
 .contact-links i {
-    font-size: 22pt;
+  font-size: 22pt;
 }
 
 .contact-links a {
-    text-decoration: none;
-    color: rgb(131, 98, 199);
-    transition: color 0.5s ease;
+  text-decoration: none;
+  color: rgb(131, 98, 199);
+  transition: color 0.5s ease;
 }
 
 .contact-links a:hover {
-    color: rgb(213, 80, 57);
+  color: rgb(213, 80, 57);
 }
 
 .contact-text a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-.contact-text a:hover{
-    text-decoration: underline;
+.contact-text a:hover {
+  text-decoration: underline;
 }
 
 .contact-icon {
-    margin: 5px;
-    display: flex;
-    font-family: 'Alegreya Sans', sans-serif;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    align-self: flex-end;
+  margin: 5px;
+  display: flex;
+  font-family: "Alegreya Sans", sans-serif;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  align-self: flex-end;
 }
 
-.contact-icon-text{
-    margin-top: 0.5rem;
+.contact-icon-text {
+  margin-top: 0.5rem;
 }
 
 /* MENU CSS FOR ALL SCREENS LARGER THAN PHONE! */
-@media (min-width: 640px){
+@media (min-width: 640px) {
+  nav {
+    width: 100%;
+    height: 3rem;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+  }
 
-     nav {
-        width: 100%;
-        height: 3rem;
-        position: fixed;
-        top: 0;   
-        z-index: 10;
-    }
+  .mobile-icon {
+    display: none;
+  }
 
-    .mobile-icon {
-        display: none;
-    }
+  .mobile-menu,
+  .mobile-menu-buttons {
+    display: none;
+  }
 
-    .mobile-menu, .mobile-menu-buttons {
-        display: none;
-    }
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    list-style: none;
+    margin: 0;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    color: rgb(238, 238, 238);
+  }
 
-    .menu {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        height: 100%;
-        list-style: none;
-        margin: 0;
-        font-family: 'Work Sans', sans-serif;
-        font-weight: 500;
-        color: rgb(238, 238, 238);
-    }
+  .menu-button {
+    height: 100%;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    /* padding: 0.95rem 1rem; */
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    color: rgb(238, 238, 238);
+    background-color: rgb(131, 98, 199);
+    text-decoration: none;
+    transition: background-color 0.75s ease;
+    display: block;
+  }
 
-    .menu-button {
-        height: 100%;
-        font-family: 'Work Sans', sans-serif;
-        font-weight: 500;
-        /* padding: 0.95rem 1rem; */
-        margin: 0;
-        box-sizing: border-box;
-        text-align: center;
-        color: rgb(238, 238, 238);
-        background-color: rgb(131, 98, 199);
-        text-decoration: none;
-        transition: background-color 0.75s ease;
-        display: block;
-    }
+  .menu-button:hover {
+    background-color: rgb(213, 80, 57);
+    cursor: pointer;
+  }
 
-    .menu-button:hover {
-        background-color: rgb(213, 80, 57);
-        cursor: pointer;
-    }
-
-    .focus{
-        background-color: rgb(213, 80, 57);
-    }
+  .focus {
+    background-color: rgb(213, 80, 57);
+  }
 }
 
 /* TABLET Portrait ============================================================ */
 @media (min-width: 640px) and (max-width: 1024px) {
+  .content {
+    padding: 0.5rem 0rem;
+    width: 80%;
+  }
 
-    .content {
-        padding: 0.5rem 0rem;
-        width: 80%;
-    }
+  .violet-main {
+    width: 18rem;
+  }
 
-    .violet-main {
-        width: 18rem;
-    }
+  /* about display CSS -------------------------------------------------------------- */
+  .bio-pic {
+    width: 50%;
+    border-radius: 50%;
+  }
 
-    /* about display CSS -------------------------------------------------------------- */
-    .bio-pic {
-        width: 50%;
-        border-radius: 50%;
-    }
+  .about-text {
+    width: 70%;
+  }
 
-    .about-text {
-        width: 70%;
-        
-    }
+  /* project display CSS -------------------------------------------------------------- */
+  .project {
+    margin: 0 auto 1rem;
+    width: 90%;
+  }
 
-    /* project display CSS -------------------------------------------------------------- */
-    .project {
-        margin: 0 auto 1rem;
-        width: 90%;
-    }
+  .title {
+    font-size: 18pt;
+  }
 
-    .title {
-        font-size: 18pt;
-    }
+  /* skills page -------------------------------------------------------> */
 
-    /* skills page -------------------------------------------------------> */
-
-    /* contact page ------------------------------------------------------------> */
-
+  /* contact page ------------------------------------------------------------> */
 }
 
 /* TABLET Landscape =========================================================== */
-@media (max-width: 1024px) and (min-width: 960px){
+@media (max-width: 1024px) and (min-width: 960px) {
+  .content {
+    padding: 1rem;
+    margin: 0 auto;
+  }
 
-    .content {
-        padding: 1rem;
-        margin: 0 auto;
-    }
+  .drawing {
+    display: flex;
+    flex-direction: column;
+    opacity: 0.8;
+  }
 
-    .drawing{
-        display: flex;
-        flex-direction: column;
-        opacity: 0.8;
-    }
+  .violet-main {
+    width: 20rem;
+  }
 
-    .violet-main {
-        width: 20rem;
-    }
+  .violet-small {
+    width: 5rem;
+    opacity: 0.8;
+  }
 
-    .violet-small{
-        width: 5rem;
-        opacity: 0.8;
-    }
+  /* about display CSS -------------------------------------------------------------- */
 
-    /* about display CSS -------------------------------------------------------------- */
-    
-    #about {
-        width: 80%;
-        margin: 0 auto;
-    }
+  #about {
+    width: 80%;
+    margin: 0 auto;
+  }
 
-    .about-content {
-        margin: 1rem auto;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: space-evenly;
-        justify-content: space-evenly;
-    }
-    
-    .bio-pic {
-        width: 16rem;
-        margin: 1rem;
-    }
+  .about-content {
+    margin: 1rem auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: space-evenly;
+    justify-content: space-evenly;
+  }
 
-    .about-heading {
-        text-align: left;
-    }
+  .bio-pic {
+    width: 16rem;
+    margin: 1rem;
+  }
 
-    .about-text {
-        width: 22rem;
-        margin: 1rem;
-    }
+  .about-heading {
+    text-align: left;
+  }
 
-    .bio {
-        
-        text-align: left;
-    }
+  .about-text {
+    width: 22rem;
+    margin: 1rem;
+  }
 
-    /* project display CSS -------------------------------------------------------------- */
+  .bio {
+    text-align: left;
+  }
 
-    .project {
-        width: 90%;
-    }
+  /* project display CSS -------------------------------------------------------------- */
 
-    .project-image {
-        width: 85%;
-    }
+  .project {
+    width: 90%;
+  }
 
+  .project-image {
+    width: 85%;
+  }
 
-    /* skills page -------------------------------------------------------> */
+  /* skills page -------------------------------------------------------> */
 
-    .skills-box {
-        width: 80%;
-        height: auto;
-        padding-top: 1rem;
-    }
+  .skills-box {
+    width: 80%;
+    height: auto;
+    padding-top: 1rem;
+  }
 
-    .skills-icons {
-        width: 90%;
-        font-size: 28pt;
-        padding: 1rem;
-        margin: 0 auto; 
-    }
+  .skills-icons {
+    width: 90%;
+    font-size: 28pt;
+    padding: 1rem;
+    margin: 0 auto;
+  }
 
-    .skill-icon {
-        margin: 1rem;
-    }
+  .skill-icon {
+    margin: 1rem;
+  }
 
+  /* contact page ------------------------------------------------------------> */
+  .contact-text {
+    margin: 1rem 2rem;
+  }
 
-    /* contact page ------------------------------------------------------------> */
-    .contact-text{
-        margin: 1rem 2rem;
-        
-    }
+  .bio-links {
+    justify-content: center;
+    align-content: center;
+  }
 
-    .bio-links{
-        justify-content: center;
-        align-content: center;
-    }
-
-    .contact-icon {
-        margin: 1rem;
-    }
+  .contact-icon {
+    margin: 1rem;
+  }
 }
 
 /* DESKTOP ==================================================================== */
 @media (min-width: 1025px) {
+  html {
+    scroll-behavior: smooth;
+  }
 
-    html {
-        scroll-behavior: smooth;
-    }
+  .content {
+    width: 80%;
+    padding: 1rem 0rem;
+    margin: 1rem auto;
+    height: auto;
+  }
 
-    .content {
-        width: 80%;
-        padding: 1rem 0rem;
-        margin: 1rem auto;
-        height: auto;
-    }
+  .violet-main {
+    width: 20rem;
+  }
 
-    .violet-main {
-        width: 20rem;
-    }
+  .b-r-corner {
+    display: block;
+    visibility: hidden;
+    width: 13rem;
+    height: 2rem;
+    align-self: flex-end;
+    margin: 1rem 2rem 12rem 1rem;
+    text-align: center;
+  }
 
-    .b-r-corner {
-        display: block;
-        visibility: hidden;
-        width: 13rem;
-        height: 2rem;
-        align-self: flex-end;
-        margin: 1rem 2rem 12rem 1rem;
-        text-align: center;
-    }
+  .violet-small {
+    width: 5rem;
+    opacity: 0.8;
+  }
 
-    .violet-small{
-        width: 5rem;
-        opacity: 0.8;
-    }
+  /* about display CSS -------------------------------------------------------------- */
+  .about-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
 
-     /* about display CSS -------------------------------------------------------------- */
-    .about-content {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .bio-pic {
-        width: 22rem;
-        margin: 2rem;
-    }
+  .bio-pic {
+    width: 22rem;
+    margin: 2rem;
+  }
 
-    .about-heading {
-        text-align: left;
-        margin: 2rem 1rem;
-    }
+  .about-heading {
+    text-align: left;
+    margin: 2rem 1rem;
+  }
 
-    .about-text {
-        width: 22rem;
-        margin: 2rem;
-}
+  .about-text {
+    width: 22rem;
+    margin: 2rem;
+  }
 
-    .bio {
-        /* font-size: 13pt; */
-        width: 22rem;
-        margin: 1rem;
-        text-align: left;
-    }
+  .bio {
+    /* font-size: 13pt; */
+    width: 22rem;
+    margin: 1rem;
+    text-align: left;
+  }
 
-    /* project display CSS -------------------------------------------------------------- */
+  /* project display CSS -------------------------------------------------------------- */
 
-    .project {
-        margin: 0 auto 1rem;
-        align-items: flex-start;
-        width: 46rem;
-    }
+  .project {
+    margin: 0 auto 1rem;
+    align-items: flex-start;
+    width: 46rem;
+  }
 
-    .title {
-        font-size: 18pt;
-    }
+  .title {
+    font-size: 18pt;
+  }
 
-    .project-image {
-        width: 100%;
-    }
+  .project-image {
+    width: 100%;
+  }
 
-    .project-stats {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin: 1rem auto 0;
-    }
+  .project-stats {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1rem auto 0;
+  }
 
-    .link-box {
-        margin: 1rem 1rem;
-        font-family: 'Work Sans', sans-serif;
-    }
+  .link-box {
+    margin: 1rem 1rem;
+    font-family: "Work Sans", sans-serif;
+  }
 
-    .link-box a{
-        transition: background-color 0.5s ease;
-    }
+  .link-box a {
+    transition: background-color 0.5s ease;
+  }
 
-    .link-box a:hover{
-        background-color: rgb(213, 80, 57);;
-    }
+  .link-box a:hover {
+    background-color: rgb(213, 80, 57);
+  }
 
-    .project-info {
-        padding: 1rem 1rem;
-    }
+  .project-info {
+    padding: 1rem 1rem;
+  }
 
-    .project-info i:hover::after {
-        display: block;
-        position: absolute;
-        font-family: 'Alegreya Sans', sans-serif;
-        font-size: 12pt;
-        padding: 0.5rem;
-        left: 45%;
-    }
+  .project-info i:hover::after {
+    display: block;
+    position: absolute;
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 12pt;
+    padding: 0.5rem;
+    left: 45%;
+  }
 
-    #node-icon:hover::after{
-        content:"Node.js";
-    }
+  #node-icon:hover::after {
+    content: "Node.js";
+  }
 
-    #express-icon:hover::after{
-        content:"Express";
-    }
-    
-    #mysql-icon:hover::after{
-        content:"MySQL";
-    }
+  #express-icon:hover::after {
+    content: "Express";
+  }
 
-    #postgres-icon:hover::after{
-        content:"PostgreSQL";
-    }
+  #mysql-icon:hover::after {
+    content: "MySQL";
+  }
 
-    #html-icon:hover::after{
-        content:"HTML5";
-    }
+  #postgres-icon:hover::after {
+    content: "PostgreSQL";
+  }
 
-    #css-icon:hover::after{
-        content:"CSS3";
-    }
+  #html-icon:hover::after {
+    content: "HTML5";
+  }
 
-    #js-icon:hover::after{
-        content:"JavaScript";
-    }
+  #css-icon:hover::after {
+    content: "CSS3";
+  }
 
-    #jquery-icon:hover::after{
-        content:"jQuery";
-    }
+  #js-icon:hover::after {
+    content: "JavaScript";
+  }
 
-    #python-icon:hover::after{
-        content:"Python";
-    }
+  #jquery-icon:hover::after {
+    content: "jQuery";
+  }
 
-    #react-icon:hover::after{
-        content:"React";
-    }
+  #python-icon:hover::after {
+    content: "Python";
+  }
 
-    .project-description {
-        text-align: left;
-        width: 100%;
-        /* font-size: 13rem; */
-    }
+  #react-icon:hover::after {
+    content: "React";
+  }
 
-    .description {
-        margin: 1rem;
-    }
+  #sequelize-icon:hover::after {
+    content: "Sequelize";
+  }
 
-    /* skills page -------------------------------------------------------> */
-    .skills-box{
-        padding-top: 2rem;
-        width: 40rem;
-    }
-    
-    .skills-icons {
-        width: 38rem;
-        font-size: 32pt;
-        padding: 1rem;
-    }
+  .project-description {
+    text-align: left;
+    width: 100%;
+    /* font-size: 13rem; */
+  }
 
-    .skill-icon {
-        margin: 1rem;
-    }
+  .description {
+    margin: 1rem;
+  }
 
-    .soft-skills {
-        width:  40rem;
-    }
+  /* skills page -------------------------------------------------------> */
+  .skills-box {
+    padding-top: 2rem;
+    width: 40rem;
+  }
 
-    /* contact page ------------------------------------------------------------> */ 
-    .contact-box {
-        width: 44rem;
-    }
+  .skills-icons {
+    width: 38rem;
+    font-size: 32pt;
+    padding: 1rem;
+  }
 
-    .contact-text{
-        width: 100%;
-        margin-top: -1rem;
-    }
+  .skill-icon {
+    margin: 1rem;
+  }
 
-    .bio-links{
-        justify-content: center;
-        align-content: center;
-    }
+  .soft-skills {
+    width: 40rem;
+  }
 
-    .contact-icon {
-        margin: 1rem;
-    }
+  /* contact page ------------------------------------------------------------> */
+  .contact-box {
+    width: 44rem;
+  }
 
+  .contact-text {
+    width: 100%;
+    margin-top: -1rem;
+  }
+
+  .bio-links {
+    justify-content: center;
+    align-content: center;
+  }
+
+  .contact-icon {
+    margin: 1rem;
+  }
 }
