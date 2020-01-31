@@ -1,12 +1,12 @@
 const projects = [
   {
     title: "Papaya",
-    img: ``,
+    img: `images/papaya/hermione.png`,
     alt: `Screenshot coming soon! :)`,
     tech: `<span>Made with </span><i class="devicon-react-original" id="react-icon"></i> <i class="devicon-nodejs-plain" id="node-icon"></i> <i class="devicon-express-original" id="express-icon"></i> <i class="devicon-postgresql-plain" id="postgres-icon"></i> <i class="devicon-sequelize-plain" id="sequelize-icon"></i> <i class="devicon-html5-plain" id="html-icon"></i> <i class="devicon-css3-plain" id="css-icon"></i>`,
     github: `<a href="https://github.com/katiejduane/Papaya" target="blank">GitHub</a>`,
     liveSite: `<a href="https://katiejduane.com/" target="blank">Site coming soon!</a>`,
-    description: `<p class="description">I made Papaya because I need it! It's a simple web application that helps creatives keep track of their projects as they move through the artistic process. Projects can be easily updated, and sorted/viewed by type (ie: poem, painting), and by status (ie: research, in-progress, completed).</p>`,
+    description: `<p class="description">I am making Papaya because I need it! THIS IS STILL IN PROGRESS (as Ms. Hermione Granger's test account above may reveal). It's a simple web application that helps creatives keep track of their projects as they move through the artistic process. Projects can be easily updated, and sorted/viewed by type (ie: poem, painting), and by status (ie: research, in-progress, completed).</p>`,
     contributions: `<p>Contributions: Concept, frontend and backend development, visual design/UX & UI. </p>`
   },
 
